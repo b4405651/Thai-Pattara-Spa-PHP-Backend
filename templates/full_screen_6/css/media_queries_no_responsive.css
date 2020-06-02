@@ -1,0 +1,35 @@
+/**
+*
+*		Media queries no responsive
+*
+**/
+
+
+.hidden {
+display: none;
+visibility: hidden;
+}
+
+.visible-phone {
+display: none !important;
+}
+
+.visible-tablet {
+display: none !important;
+}
+
+.hidden-desktop {
+display: none !important;
+}
+
+.visible-desktop {
+display: inherit !important;
+}
+
+
+/** 		Disable position fixed of left column 		**/
+
+#column-menu {
+position:absolute;
+}
+	

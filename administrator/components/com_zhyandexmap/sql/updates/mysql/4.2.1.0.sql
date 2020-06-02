@@ -1,0 +1,1 @@
+ALTER TABLE `#__zhyandexmaps_maps` ADD `showbelong` tinyint(1) NOT NULL default '1';

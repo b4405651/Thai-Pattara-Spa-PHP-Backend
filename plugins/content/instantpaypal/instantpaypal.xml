@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>Content - InstantPaypal</name>
+	<author>Joomla! Extensions Store</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 - Joomla! Extensions Store. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>ecommerce@storejoomla.org</authorEmail>
+	<authorUrl>http://storejoomla.org</authorUrl>
+	<version>1.1</version>
+	<description>INSTANTPAYPAL_DESCRIPTION</description>
+	
+	<files>
+		<filename plugin="instantpaypal">instantpaypal.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_instantpaypal.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_instantpaypal.sys.ini</language>
+    </languages>
+    
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="button_type" type="list" default="pay" label="PARAM_BUTTON_TYPE" description="PARAM_BUTTON_TYPE_DESC" >
+					<option value="donate">Donate</option>
+					<option value="pay">Pay</option>
+					<option value="_xclick">Buy</option>
+					<option value="fullcart">Full cart</option>
+					<option value="showcart">Show cart</option>
+					<option value="addtocart">Add to cart</option>
+				</field>
+				 
+				<field name="showxtdinfo" class="btn-group" type="radio" default="1" label="PARAM_SHOWXTD_INFO_LABEL" description="PARAM_SHOWXTD_INFO_LABEL_DESC">
+				  <option value="0">No</option>
+				  <option value="1">Yes</option>
+				</field>
+				<field name="paypal_email" type="text" size="50" default="" label="PARAM_PAYPALVENDOR_EMAIL_LABEL" description="PARAM_PAYPALVENDOR_EMAIL_DESC" />
+				<field name="currency_code" type="text" default="USD" label="PARAM_CURRENCY_LABEL" description="PARAM_CURRENCY_DESC" />
+				<field name="country_code" type="text" default="US" label="PARAM_COUNTRY_LABEL" description="PARAM_COUNTRY_DESC" />
+				<field name="button_path" type="text" default="en_US" label="PARAM_BUTTON_LABEL" description="PARAM_BUTTON_DESC" />
+				<field name="default_btnsize" class="btn-group" type="radio" default="_SM" label="PARAM_BUTTON_SIZE_LABEL" description="PARAM_BUTTON_SIZE_DESC">
+				  <option value="_LG">Large</option>
+				  <option value="_SM">Small</option>
+				</field>
+				
+				<field name="default_price" type="text" default="0" label="PARAM_DEFAULTPRICE_LABEL" description="PARAM_DEFAULTPRICE_LABEL_DESC" />
+				<field name="default_productname" type="text" default="ProductDemo" label="PARAM_DEFAULTPRODUCTNAME_LABEL" description="PARAM_DEFAULTPRODUCTNAME_LABEL_DESC" />
+				
+				<field name="open_window" class="btn-group" type="radio" default="_blank" label="PARAM_OPEN_WINDOW_LABEL" description="PARAM_OPEN_WINDOW_DESC">
+				  <option value="_self">Self window</option>
+				  <option value="_blank">Blank window</option>
+				</field>
+				<field name="css_form_class" type="text" default="" label="PARAM_CSS_FORM_LABEL" description="PARAM_CSS_FORM_DESC" />
+				<field name="css_infoxtd_class" type="text" default="" label="PARAM_CSS_INFOXTD_LABEL" description="PARAM_CSS_INFOXTD_DESC" />
+				
+				<field name="sandbox_mode" class="btn-group" type="radio" default="0" label="PARAM_SANDBOX_LABEL" description="PARAM_SANDBOX_LABEL_DESC">
+				  <option value="0">No</option>
+				  <option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,119 @@
+/*  --------------------------------------------------
+  Global style
+  -------------------------------------------------- */
+form > div[class^="pole"] {
+  margin: 15px 0;
+}
+form div[class^="pole"] .focusout {
+  box-shadow: 0 0 5px #A0C2F9;
+  border-color: #A0C2F9;
+}
+form div[class^="pole"] .alert {
+  box-shadow: 0 0 5px red;
+  border-color: red;
+}
+form div[class^="pole"] label .required {
+  color: red;
+}
+.error-report {
+  text-align: center;
+  padding: 20px;
+}
+.error-report .head-report {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.error-report .text-report {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.error-report .text-report p {
+  margin: 5px 0;
+}
+.error_form ul {
+  padding: 5px;
+  list-style-position: inside;
+  margin: 0;
+}
+.error_form ul li {
+  list-style-type: none;
+  padding: 2px;
+  color: red;
+}
+.loadform {
+  display: none;
+  margin: 0 10px;
+}
+/*	--------------------------------------------------
+	Style dsReveal Modals
+	-------------------------------------------------- */
+.dspopup-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0;
+}
+.dspopup-modal {
+  visibility: hidden;
+  top: 100px;
+  left: 50%;
+  margin-left: -300px;
+  width: 520px;
+  background-color: #f5f5f5;
+  position: fixed;
+  z-index: 101;
+  padding: 30px 40px 34px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.dspopup-modal.small {
+  width: 200px;
+  margin-left: -140px;
+}
+.dspopup-modal.medium {
+  width: 400px;
+  margin-left: -240px;
+}
+.dspopup-modal.large {
+  width: 600px;
+  margin-left: -340px;
+}
+.dspopup-modal.xlarge {
+  width: 800px;
+  margin-left: -440px;
+}
+.dspopup-modal .close-dspopup-modal {
+  font-size: 22px;
+  line-height: .5;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  color: #aaa;
+  text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+  font-weight: bold;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: url(images/close_circle.png) no-repeat;
+  /*background: url(images/close_square.png) no-repeat;*/
+
+}
+.dspopup-modal .close-dspopup-modal:hover {
+  background-position: 0 100%;
+}
+.ds-form.dspopup-modal {
+  overflow: hidden;
+}
+/*  --------------------------------------------------
+  Forms Styles
+  -------------------------------------------------- */

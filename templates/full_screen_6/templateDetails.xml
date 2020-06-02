@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.0" type="template" method="upgrade">
+	<name>full_screen_6</name>
+	<creationDate>01/01/2013</creationDate>
+	<author>JoomSpirit</author>
+	<copyright>Copyright 2013 JoomSpirit</copyright>
+	<authorEmail>contact@joomspirit.com</authorEmail>
+	<authorUrl>http://www.joomspirit.com</authorUrl>
+	<version>2.1</version>
+	<description><![CDATA[ 
+	<link rel="stylesheet" href="../templates/full_screen_6/css/admin.css" type="text/css" />
+	IMPORTANT : Read the settings for this template
+	All informations is in your manual. You must double click on the file manual.html
+	You will find in how to configure the template, use the typography and the module positions for your modules.
+	]]></description>
+
+<files>
+<filename>favicon.ico</filename>
+<filename>index.html</filename>
+<filename>index.php</filename>
+<filename>template_thumbnail.png</filename>
+<folder>css</folder>
+<folder>html</folder>
+<folder>font</folder>
+<folder>images</folder>
+<folder>img</folder>
+<folder>lib</folder>
+</files>
+
+
+<positions>
+	<position>home_page</position>
+	<position>menu</position>
+	<position>supersized</position>
+	<position>left</position>
+	<position>right</position>
+	<position>top</position>
+	<position>bottom</position>
+	<position>search</position>
+	<position>logo</position>
+	<position>address</position>
+	<position>breadcrumb</position>
+	<position>translate</position>
+	<position>google_map</position>
+	<position>video</position>
+	<position>user1</position>
+	<position>user2</position>
+	<position>user3</position>
+	<position>user4</position>
+	<position>user5</position>
+	<position>user6</position>
+	<position>user7</position>
+	<position>user8</position>
+	<position>user9</position>
+</positions>
+
+
+<config>
+	<fields name="params">
+		<fieldset name="basic" addfieldpath="/templates/full_screen_6/lib/php">
+
+
+			<field name="Header01" type="header" default="Color Theme" label="" description="" />
+						
+				<field name="color_theme" type="list" default="red" label="Color theme" description="It's the color for your website title, links, title H2, read more button, ..." >
+					<option value="orange">Orange</option>			
+					<option value="red">Red</option>
+					<option value="blue">Blue</option>
+					<option value="blue-jean">Blue jean</option>
+					<option value="green">Green</option>
+					<option value="green-light">Green light</option>
+					<option value="black">Black</option>
+				</field>
+				
+
+			<field name="Header02" type="header" default="Left column" label="" description="" />
+
+				<field name="width_menu" type="text" default="280" size="10" label="Width of left column with menu in px" description="Enter the width of your left column in px . Default : 280" />
+							
+				<field name="website_title" type="text" default="" size="20" label="Website title" description="" />
+				
+				<field name="color_theme_menu" type="list" default="white" label="Color theme of left column" description="">
+					<option value="white">White</option>
+					<option value="black">Black</option>
+				</field>				
+				
+				<field name="transparency_menu" type="list" default="2" label="Transparency of left column" description="">
+					<option value="0">No transparency</option>
+					<option value="1">Transparency +</option>
+					<option value="2">Transparency ++</option>
+					<option value="3">Transparency +++</option>
+					<option value="4">Transparency 4+</option>
+					<option value="5">Transparency 5+</option>
+					<option value="6">Transparency 6+</option>
+					<option value="7">Transparency 7+</option>
+					<option value="8">Transparency 8+</option>
+					<option value="9">Transparency 9+</option>
+					<option value="10">Transparency 100%</option>
+				</field>
+				
+				<field name="min_height_menu" type="text" default="500" size="10" label="Minimum height to display your left column in px" description="If the height of the screen is less of this value (in pixels), the left column will not be fixed. Default : 400" />
+				
+
+			<field name="Header03" type="header" default="Content box" label="" description="" />
+				
+				<field name="position_content_box" type="list" default="top" label="Position of the content box" description="">
+					<option value="top">Top right corner</option>
+					<option value="bottom">Bottom rigth corner</option>
+					<option value="full_width">Full width</option>
+				</field>					
+					
+				<field name="width_content" type="text" default="350px" size="10" label="Width of content box in px or %" description="Enter the width of content box in px or %. Maximum value is 90% . Default : 350px" />
+
+				<field name="color_theme_content" type="list" default="white" label="Color theme of content box" description="">
+					<option value="white">White</option>
+					<option value="black">Black</option>
+				</field>
+				
+				<field name="color_text" type="list" default="black" label="Color of your text" description="Choose the color of your text for the content">
+					<option value="white">White</option>
+					<option value="black">Black</option>
+				</field>
+				
+				<field name="shadow_content_box" type="list" default="normal" label="Display a shadow around the content box" description="">
+					<option value="none">None</option>
+					<option value="normal">Normal</option>
+					<option value="corner">Corner</option>
+				</field>				
+				
+				<field name="transparency_content" type="list" default="2" label="Transparency of content box" description="">
+					<option value="0">No transparency</option>
+					<option value="1">Transparency +</option>
+					<option value="2">Transparency 2+</option>
+					<option value="3">Transparency 3+</option>
+					<option value="4">Transparency 4+</option>
+					<option value="5">Transparency 5+</option>
+					<option value="6">Transparency 6+</option>
+					<option value="7">Transparency 7+</option>
+					<option value="8">Transparency 8+</option>
+					<option value="9">Transparency 9+</option>
+					<option value="10">Transparency 100%</option>
+				</field>
+
+							
+				<field name="width_left" type="text" default="20" size="10" label="Width of left module position in px or %" description="Enter the width of the left module position in px or % . Default : 160px" />
+				<field name="width_right" type="text" default="20" size="10" label="Width of right module position in px or %" description="Enter the width of the right module position in px or % . Default : 160px" />
+				
+				<field name="user1_width" type="text" default="31" size="10" label="Width of user1 in percentage" description="Enter the width for user1  in percentage. Default : 31" />
+				<field name="user3_width" type="text" default="31" size="10" label="Width of user3 in percentage" description="Enter the width for user3  in percentage. Default : 31" />
+				<field name="user4_width" type="text" default="31" size="10" label="Width of user4 in percentage" description="Enter the width for user4  in percentage. Default : 31" />
+				<field name="user6_width" type="text" default="31" size="10" label="Width of user6 in percentage" description="Enter the width for user6  in percentage. Default : 31" />
+				
+
+				<field name="button_fullscreen" type="list" default="1" label="Display the button to hide the content box" description="" >
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+
+
+			<field name="Header04" type="header" default="Font" label="" description="" />
+					
+
+				<field name="font_title" type="list" default="open_sanscondensed" label="Font for your website title" description="">
+					<option value="Marvel">Marvel</option>
+					<option value="open_sansregular">Open sans regular</option>
+					<option value="open_sanslight">Open sans light</option>
+					<option value="open_sanscondensed">Open sans condensed</option>
+					<option value="KellySlabRegular">Kelly Slab</option>
+					<option value="Gnuolane">Gnuolane</option>
+					<option value="MidoMedium">Mido</option>
+					<option value="UmbrageRegular">Umbrage</option>
+					<option value="Helvetica">Helvetica</option>
+					<option value="Trebuchet">Trebuchet</option>
+					<option value="Arial">arial</option>
+					<option value="Georgia">Georgia</option>
+					<option value="Times">Times</option>
+					<option value="Verdana">Verdana</option>
+					<option value="Tahoma">Tahoma</option>
+				</field>
+
+				<field name="font" type="list" default="open_sansregular" label="Font for your menu and article title" description="">
+					<option value="Marvel">Marvel</option>
+					<option value="open_sansregular">Open sans regular</option>
+					<option value="open_sanscondensed">Open sans condensed</option>
+					<option value="KellySlabRegular">Kelly Slab</option>
+					<option value="Gnuolane">Gnuolane</option>
+					<option value="MidoMedium">Mido</option>
+					<option value="UmbrageRegular">Umbrage</option>
+					<option value="Trebuchet">Trebuchet</option>
+					<option value="Helvetica">Helvetica</option>
+					<option value="Arial">arial</option>
+					<option value="Georgia">Georgia</option>
+					<option value="Times">Times</option>
+					<option value="Verdana">Verdana</option>
+					<option value="Tahoma">Tahoma</option>
+				</field>
+				
+				<field name="font_content" type="list" default="Helvetica Neue" label="Font for your content" description="">
+				<option value="Helvetica">Helvetica Neue</option>
+					<option value="Trebuchet">Trebuchet</option>
+					<option value="Arial">arial</option>
+					<option value="Georgia">Georgia</option>
+					<option value="Times">Times</option>
+					<option value="Verdana">Verdana</option>
+					<option value="Tahoma">Tahoma</option>
+				</field>		
+			
+				<field name="fontSize" type="list" default="0.75em" label="Default font size" description="">
+					<option value="0.55em">smallest</option>
+					<option value="0.65em">small</option>
+					<option value="0.75em">normal</option>
+					<option value="0.85em">big</option>
+					<option value="0.95em">biggest</option>
+				</field>
+				
+			<field name="Header05" type="header" default="Social icons" label="" description="" />
+			
+				<field name="text_social_icons" type="text" default="" label="Text before your social icons" description=" " />
+				
+				<field name="twitter" type="text" default="" size="30" label="Twitter URL " description="" />
+				<field name="blogger" type="text" default="" size="30" label="Blogger URL " description="" />
+				<field name="facebook" type="text" default="" size="30" label="Facebook URL " description="" />
+				<field name="rss" type="text" default="" size="30" label="RSS URL " description="" />
+				<field name="linkedin" type="text" default="" size="30" label="Linkedin URL " description="" />
+				<field name="myspace" type="text" default="" size="30" label="MySpace URL " description="" />
+				<field name="delicious" type="text" default="" size="30" label="Delicious URL " description="" />
+				<field name="flickr" type="text" default="" size="30" label="Flickr URL " description="" />
+				<field name="youtube" type="text" default="" size="30" label="Youtube URL " description="" />
+				<field name="vimeo" type="text" default="" size="30" label="Vimeo URL " description="" />
+				<field name="yahoo" type="text" default="" size="30" label="Yahoo Messenger URL " description="" />
+				<field name="digg" type="text" default="" size="30" label="Digg URL " description="" />
+				<field name="picasa" type="text" default="" size="30" label="Picasa URL " description="" />
+				<field name="stumbleupon" type="text" default="" size="30" label="Stumbleupon URL " description="" />
+				<field name="technorati" type="text" default="" size="30" label="Technorati URL " description="" />
+				<field name="tumblr" type="text" default="" size="30" label="Tumblr URL " description="" />
+			
+				<field name="google1" type="list" default="no" label="Enable Google +1 icon" description="">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+
+
+			<field name="Header06" type="header" default="Responsive design" label="" description="" />
+				
+				<field name="responsive" type="list" default="yes" label="Enable responsive feature" description="The design change when the screen resolution is less of 980 pixels : better for mobile devices. If you choose No responsive mode, the minimum width is 980 pixels.">				
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+				
+				<field name="column_responsive" type="list" default="no" label="Display left and right column under the content in small resolution" description="Disable this option if you use a javascript animation in your column.">				
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>				
+				
+			<field name="Header07" type="header" default="Drop down menu for tablet" label="" description="" />
+				
+				<field name="mobile_menu" type="list" default="yes" label="Display a single button instead the drop down menu" description="There's a bug with the latest version of mobile browser and the drop down menu (in particular with Chrome 25) : the sub menu items of drop down menu aren't clickable. Active this option to switch the menu of mobile version when the screen width of the mobile is more as 980 pixels (tablet).">				
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>				
+				
+			<field name="Header08" type="header" default="Bootstrap" label="" description="" />
+			
+				<field name="bootstrap" type="list" default="no" label="Load Bootstrap 2.1.1" description="Disable this option if you doesn't the extra features of Bootstrap">					
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+
+				<field name="bootstrap_js" type="list" default="no" label="Load Bootstrap javascript" description="Disable this option if the website load another version of Bootstrap or if you don't use Bootstrap animation">					
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+				
+			
+	</fieldset>
+	</fields>		
+
+</config>
+
+</extension>

@@ -1,0 +1,1 @@
+ALTER TABLE `#__zhyandexmaps_paths` ADD `fillimageurl` text NOT NULL;

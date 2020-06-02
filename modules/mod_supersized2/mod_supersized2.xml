@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.0"
+	client="site"
+	method="upgrade">	
+	<name>supersized2</name>
+	<author>JoomSpirit</author>
+	<creationDate>january 2013</creationDate>
+	<copyright>JoomSpirit</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>contact@joomspirit.com</authorEmail>
+	<authorUrl>http://www.joomspirit.com</authorUrl>
+	<version>2</version>
+	<description>     
+    	<![CDATA[ 
+		<link rel="stylesheet" href="../modules/mod_supersized2/css_admin.css" type="text/css" />
+		Module to display Supersized slideshow version 3.2 . Work only with the appropriate JoomSpirit template.
+		]]>
+	</description>
+	
+	<files>
+		<filename module="mod_supersized2">mod_supersized2.php</filename>
+		<filename module="mod_supersized2">css_admin.css</filename>
+		<filename module="mod_supersized2">index.html</filename>
+		<filename module="mod_supersized2">helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+		
+			<fieldset name="general" label="General settings">
+
+					<field name="slideshow" type="list" default="1" label="Enable slideshow" description="Choose if you want display a slideshow or only one image" >
+						<option value="1">Display a slideshow</option>
+						<option value="0">Display only one image</option>
+					</field>
+			
+					<field name="stop_loop" type="list" default="0" label="Stops slideshow on last slide" description="" >
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</field>
+
+					<field name="random" type="list" default="0" label="Randomize slide order" description="Ignores start slide and it's not possible to show the thumbnails with this option" >
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</field>					
+					
+					<field name="slide_interval" type="text" default="5000" label="Slide interval (in ms)" size="6" description="Length between transitions" />
+			
+					<field name="transition" type="list" default="1" label="Transition" description="" >
+						<option value="0">None</option>
+						<option value="1">Fade</option>
+						<option value="2">Slide top</option>
+						<option value="3">Slide right</option>
+						<option value="4">Slide bottom</option>
+						<option value="5">Slide left</option>
+						<option value="6">Carousel right</option>
+						<option value="7">Carousel left</option>
+					</field>
+					
+					<field name="transition_speed" type="text" default="1500" label="Speed of transition" size="6" description="" />
+								
+					<field name="performance" type="list" default="1" label="Performance" description="Only works for Firefox/IE, not Webkit" >
+						<option value="0">Normal</option>
+						<option value="1">Hybrid speed/quality</option>
+						<option value="2">Optimizes image quality</option>
+						<option value="3">Optimizes transition speed</option>
+					</field>		
+			
+					<field name="image_protect" type="list" default="1" label="Image protect" description="Disables image dragging and right click with Javascript" >
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+					
+					<field name="show_thumb" type="list" default="1" label="Show thumbnails when the content is hide (disable if Random mode is enable)" description="" >
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>					
+				
+				
+			</fieldset>	
+			
+			<fieldset name="size" label="Size and Position">
+
+
+					<field name="fit_always" type="list" default="0" label="Fit always" description="Image will never exceed browser width or height (Ignores min. dimensions)" >
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+
+					<field name="fit_landscape" type="list" default="0" label="Fit landscape" description="Landscape images will not exceed browser width" >
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>		
+			
+					<field name="fit_portrait" type="list" default="0" label="Fit portrait" description="Portrait images will not exceed browser height" >
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+
+
+					<field name="min_width" type="text" default="0" label="Minimum width" size="6" description="Min width allowed (in pixels)" />
+			
+					<field name="min_height" type="text" default="0" label="Minimum height" size="6" description="Min height allowed (in pixels)" />
+			
+					<field name="vertical_center" type="list" default="1" label="Vertically center background" description="" >
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+
+					<field name="horizontal_center" type="list" default="1" label="Horizontally center background" description="" >
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>					
+
+
+			</fieldset>	
+			
+			<fieldset name="imagedirectory" label="Image directory">
+			
+				<field name="imagefolder" type="folderlist" directory="images/" label="Folder" hide_default="true" description="The folder with your images must be in the folder 'Images' of your Joomla website." />
+				
+			</fieldset>
+		
+		</fields>
+	</config>
+</extension>

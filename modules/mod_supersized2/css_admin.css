@@ -1,0 +1,20 @@
+.tab-content .row-fluid .span0, .tab-content .row-fluid .span3, .tab-content .row-fluid .span6, .tab-content .row-fluid .span9, .tab-content .row-fluid .span12 {
+width:100%;
+}
+
+.tab-content .form-vertical {
+background: #f0f0f0;
+border:2px solid #ddd;
+margin-top:40px;
+padding:20px;
+}
+
+.info-labels + div {
+background: none repeat scroll 0 0 #EEEEEE;
+color: #000000;
+font-size: 110%;
+font-style: italic;
+font-weight: normal;
+margin: 15px 0 30px;
+padding: 15px 10px 10px 20px;
+}

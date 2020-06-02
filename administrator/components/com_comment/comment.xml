@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_COMMENT</name>
+	<author>Compojoom.com</author>
+	<creationDate>2016-11-10</creationDate>
+	<copyright>(C) 2010 Daniel Dimitrov</copyright>
+	<authorEmail>contact-us@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>5.3.8</version>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<scriptfile>script.php</scriptfile>
+
+	<administration>
+		<menu img="../media/com_comment/backend/images/ccomment-logo.png">COM_COMMENT</menu>
+		<submenu>
+			<menu view="comments">COM_COMMENT_MANAGE_COMMENTS</menu>
+			<menu view="emailqueues">COM_COMMENT_EMAIL_QUEUE</menu>
+			<menu view="settings">COM_COMMENT_SETTINGS</menu>
+			<menu view="import">COM_COMMENT_IMPORT</menu>
+			<menu view="customfields">COM_COMMENT_CUSTOM_FIELDS</menu>
+		</submenu>
+		<files folder="administrator/components/com_comment">
+			<file>access.xml</file>
+<file>CHANGELOG.php</file>
+<file>comment.php</file>
+<file>config.xml</file>
+<file>controller.php</file>
+<folder>controllers</folder>
+<folder>helpers</folder>
+<folder>library</folder>
+<folder>models</folder>
+<folder>plugins</folder>
+<folder>sql</folder>
+<folder>tables</folder>
+<file>version.php</file>
+<folder>views</folder>
+		</files>
+		<languages folder="administrator/language">
+			<language tag="en-GB">en-GB/en-GB.com_comment.ini</language>
+<language tag="en-GB">en-GB/en-GB.com_comment.sys.ini</language>
+		</languages>
+	</administration>
+
+	<files folder="components/com_comment">
+		<folder>assets</folder>
+<folder>classes</folder>
+<file>comment.php</file>
+<file>controller.php</file>
+<folder>controllers</folder>
+<folder>helpers</folder>
+<file>jomsocial_rule.xml</file>
+<folder>models</folder>
+<folder>templates</folder>
+<folder>views</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.com_comment.ini</language>
+	</languages>
+
+
+	<media destination="com_comment" folder="media/com_comment">
+		<folder>backend</folder>
+<folder>emoticons</folder>
+<folder>images</folder>
+<folder>js</folder>
+<folder>templates</folder>
+<folder>ubb</folder>
+	</media>
+
+	<updateservers>
+		<server type="extension" priority="1" name="CComment Core"><![CDATA[https://compojoom.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=16&dummy=extension.xml]]></server>
+	</updateservers>
+</extension>

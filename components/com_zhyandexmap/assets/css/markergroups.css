@@ -1,0 +1,129 @@
+#YMapsMenu-advanced ul,
+ul.zhym-markergroup-group-ul-menu-advanced
+{
+margin-left: 0 !important;
+padding: 0 !important;
+list-style-type: none !important;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.zhym-markergroup-group-li-all-advanced,
+.zhym-markergroup-group-li-all-simple,
+.zhym-markergroup-group-li-advanced,
+.zhym-markergroup-group-li-simple
+{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#YMapsMenu-advanced a,
+ul.zhym-markergroup-group-ul-menu-advanced a
+{
+display: block;
+padding: 3px;
+background-color: #369;
+border-bottom: 1px solid #fff;
+}
+
+#YMapsMenu-advanced a:link, #zhym-menu-advanced a:visited,
+ul.zhym-markergroup-group-ul-menu-advanced a:visited
+{
+color: #fff;
+text-decoration: none!important;
+}
+
+#YMapsMenu-advanced #zhym-menu-advanced a.active,
+ul.zhym-markergroup-group-ul-menu-advanced a.active
+{
+background-color: #035;
+color: #bbb;
+                    }
+#YMapsMenu-advanced a:hover,
+ul.zhym-markergroup-group-ul-menu-advanced a:hover
+{
+background-color: #036;
+color: #eee;
+}
+
+
+
+#YMapsMenu-simple #zhym-menu-simple,
+ul.zhym-markergroup-group-ul-menu-simple 
+{
+              list-style: none!important;
+              margin-left: 0!important;
+              padding: 0!important;
+}
+
+#YMapsMenu-simple #zhym-menu-simple a,
+ul.zhym-markergroup-group-ul-menu-simple a
+{
+      text-decoration: none!important;
+}
+            
+#YMapsMenu-simple #zhym-menu-simple a.active,
+ul.zhym-markergroup-group-ul-menu-simple a.active 
+{
+      color: #000;
+}
+
+
+.zhym-markergroup-a-simple 
+{
+}
+.zhym-markergroup-img-simple,
+.zhym-markergroup-img-all-simple
+{
+	display: inline!important;
+}
+.zhym-markergroup-text-simple,
+.zhym-markergroup-text-all-simple
+{
+	display: inline!important;
+}
+				
+.zhym-markergroup-a-advanced 
+{
+}
+.zhym-markergroup-img-advanced,
+.zhym-markergroup-img-all-advanced
+{
+	display: inline!important;
+}
+.zhym-markergroup-text-advanced,
+.zhym-markergroup-text-all-advanced 
+{
+	display: inline!important;
+}
+				
+.zhym-markergroup-div-all-simple,
+.zhym-markergroup-div-all-advanced
+{
+	display: inline!important;
+}
+
+
+.zhym-markergroup-a-all-simple,
+.zhym-markergroup-a-all-advanced
+{
+	display: inline!important;
+}
+
+.zhym-markergroup-link-all-simple,
+.zhym-markergroup-link-all-advanced
+{
+	display: inline!important;
+	border: 0 none !important;
+}
+
+.zhym-markergroup-all-advanced
+{
+	background-color: #369;
+	border-bottom: 1px solid #fff;
+	padding: 3px;
+}
+
+.zhym-markergroup-all-simple
+{
+	padding: 3px;
+}

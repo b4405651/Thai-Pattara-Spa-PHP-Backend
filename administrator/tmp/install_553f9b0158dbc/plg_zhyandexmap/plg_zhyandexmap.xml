@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.0" type="plugin" group="content" method="upgrade" >
+	<name>Zh YandexMap Plugin</name>
+	<creationDate>Feb 2013</creationDate>
+	<author>Zhuk Dmitry</author>
+	<authorEmail>ZhukDL@gmail.com</authorEmail>
+	<authorUrl>http://zhuk.cc</authorUrl>
+	<copyright>Copyright</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPLv2 or later</license>
+	<version>3.1.2.3</version>
+	<description>This plugin for Zh YandexMap component</description>
+	<files>
+		<filename plugin="plg_zhyandexmap">plg_zhyandexmap.php</filename>
+		<filename>index.html</filename>
+		<filename>v1x.php</filename>
+		<filename>v2x.php</filename>
+		<folder>helpers</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+				<language tag="cs-CZ">language/cs-CZ/cs-CZ.plg_content_plg_zhyandexmap.ini</language>	
+                <language tag="en-GB">language/en-GB/en-GB.plg_content_plg_zhyandexmap.ini</language>
+				<language tag="es-AR">language/es-AR/es-AR.plg_content_plg_zhyandexmap.ini</language>
+				<language tag="es-CO">language/es-CO/es-CO.plg_content_plg_zhyandexmap.ini</language>
+				<language tag="es-ES">language/es-ES/es-ES.plg_content_plg_zhyandexmap.ini</language>
+                <language tag="ru-RU">language/ru-RU/ru-RU.plg_content_plg_zhyandexmap.ini</language>
+                <language tag="uk-UA">language/uk-UA/uk-UA.plg_content_plg_zhyandexmap.ini</language>
+				<language tag="vi-VN">language/vi-VN/vi-VN.plg_content_plg_zhyandexmap.ini</language>
+        </languages>
+	  <config>
+		<fields name="params">
+		</fields>
+	  </config> 
+        <updateservers>
+                <server type="extension" priority="1" name="Zh YandexMap Plugin Update Site">http://zhuk.cc/update/plg_zhyandexmap/extension.xml</server>
+        </updateservers>
+</extension>

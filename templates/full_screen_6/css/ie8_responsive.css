@@ -1,0 +1,57 @@
+/*****************************************
+		SITE  IE8- Responsive
+******************************************/
+
+
+@media screen and (max-width: 979px) {
+
+	#column-menu {
+	border-right:none;
+	border-bottom:1px solid #ccc;
+	}
+	
+	.footer {
+	border-top:1px solid #ccc;
+	}
+	
+	.menu-black #column-menu, .menu-black .footer {
+	border-color: #666;
+	}
+	
+	.drop-down ul {
+	background : transparent url(../images/black-70.png) 0 0 repeat;
+    border : none;
+    left: 0;
+    position: absolute;
+    display:block;
+    top: 0;
+    transition: left 0.4s ease 0s;
+    width: 100%;
+    max-width:inherit;
+    z-index: 1337;
+    max-height: 0;
+    min-height:100%;
+    overflow: hidden;
+ 	}
+ 	
+ 	.drop-down ul ul {
+ 	padding-bottom:0px;
+ 	}
+ 	
+	.drop-down:hover ul {
+    max-height: none;
+    overflow: visible;
+    top: -100px;
+    padding: 110px 0 400px 0;
+	}
+	
+	.drop-down:hover ul ul {
+    top: 0px;
+    padding: 0;
+	}
+	
+	.drop-down li {
+	padding : 0 20px 0 10px;
+	}
+	
+}

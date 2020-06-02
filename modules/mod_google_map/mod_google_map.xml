@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.2"
+	client="site"
+	method="upgrade">	
+	<name>simple google map</name>
+	<author>JoomSpirit</author>
+	<creationDate>November 2013</creationDate>
+	<copyright>JoomSpirit</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>contact@joomspirit.com</authorEmail>
+	<authorUrl>http://www.joomspirit.com</authorUrl>
+	<version>1.0</version>
+	<description>     
+    	<![CDATA[ 
+		<link rel="stylesheet" href="../modules/mod_google_map/css_admin.css" type="text/css" />
+		Module to display Google map in full screen . Work only with the appropriate JoomSpirit template.
+		]]>
+	</description>	
+	
+	<files>
+		<filename module="mod_google_map">mod_google_map.php</filename>
+		<filename module="mod_google_map">css_admin.css</filename>
+		<filename module="mod_google_map">index.html</filename>
+		<filename module="mod_google_map">helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>php</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_google_map/php">
+
+				<field name="Header01" type="header" default="url" label="" description="" />
+
+					<field name="url" type="text" default="" label="URL of your google map link" size="30" description="Read the manual for more informations" />
+			
+								
+		
+			</fieldset>
+		</fields>
+	</config>
+</extension>

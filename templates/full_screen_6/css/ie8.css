@@ -1,0 +1,146 @@
+/*****************************************
+		SITE  IE8-
+******************************************/
+
+/** 	Resize images 		**/
+
+img, embed, object, video, .scale {
+/* IE7-8 need help adjusting responsive images */
+width: auto;
+}
+
+
+#column-menu {
+border-right:1px solid #ccc;
+}
+
+.menu-black #column-menu {
+border-color: #666;
+}
+
+.footer .search-module {
+margin-right:67px !important;
+width:114px;
+}
+
+.footer .search-module .inputbox {
+width:114px;
+background: transparent url(../images/black-05.png) 0 0 repeat !important;
+}
+
+.footer .search-module .inputbox:focus {
+background: transparent url(../images/black-08.png) 0 0 repeat !important;
+}
+
+.footer .search-module .button {
+top:4px;
+right:-40px;
+background-color : transparent !important;
+background-image : none !important;
+}
+
+
+
+
+/** 	MENUS 		**/
+
+.drop-down li:hover, .drop-down li:focus {
+height:100%;
+}
+
+.drop-down ul ul {
+border:1px solid #aaa;
+}
+
+.menu-black .drop-down ul ul {
+border-color: #999;
+}
+
+.horizontal_menu li a, .horizontal_menu li span.separator {
+border:1px solid transparent;
+}
+
+.horizontal_menu li.active a, .horizontal_menu li:hover a {
+border:1px solid #ddd;
+}
+
+div.mod-languages ul.lang-inline li {
+display:inline-block;
+}
+
+/** 	Form 		**/
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"],
+input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+max-width: none;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"],
+input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+padding : 4px 7px;
+border : 1px solid #ddd;
+}
+
+textarea:hover, input[type="text"]:hover, input[type="password"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="date"]:hover,
+input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, input[type="number"]:hover, input[type="email"]:hover, input[type="url"]:hover,
+input[type="search"]:hover, input[type="tel"]:hover, input[type="color"]:hover, .uneditable-input:hover {
+border-color:#d4d4d4;
+}
+
+input[type="submit"], button {
+padding : 2px 8px;
+border : 1px solid #ddd;
+}
+
+input[type="submit"]:hover, button:hover {
+border-color:#d2d2d2;
+}
+
+
+/** 
+***				specific white text 		
+**/
+
+
+/** 	Form 		**/
+
+.white-text textarea, .white-text input[type="text"], .white-text input[type="password"], .white-text input[type="datetime"], .white-text input[type="datetime-local"], .white-text input[type="date"],
+.white-text input[type="month"], .white-text input[type="time"], .white-text input[type="week"], .white-text input[type="number"], .white-text input[type="email"], .white-text input[type="url"],
+.white-text input[type="search"], .white-text input[type="tel"], .white-text input[type="color"], .white-text .uneditable-input {
+border : 1px solid #555;
+}
+
+.white-text textarea:hover, .white-text input[type="text"]:hover, .white-text input[type="password"]:hover, .white-text input[type="datetime"]:hover, .white-text input[type="datetime-local"]:hover, .white-text input[type="date"]:hover,
+.white-text input[type="month"]:hover, .white-text input[type="time"]:hover, .white-text input[type="week"]:hover, .white-text input[type="number"]:hover, .white-text input[type="email"]:hover, .white-text input[type="url"]:hover,
+.white-text input[type="search"]:hover, .white-text input[type="tel"]:hover, .white-text input[type="color"]:hover, .white-text .uneditable-input:hover {
+border-color:#666;
+}
+
+.white-text input[type="submit"], .white-text button {
+color : #eee;
+background : transparent url(../images/black-30.png) top left repeat !important;
+border : 1px solid #666;
+}
+
+.white-text input[type="submit"]:hover, .white-text button:hover {
+border-color:#777;
+}
+
+.white-text .contact .button {
+background : transparent url(../images/black-30.png) top left repeat ;
+border : 1px solid #666;
+}
+
+.white-text .contact .button:hover {
+border-color:#777;
+}
+
+.white-text .horizontal_menu li.active a, .horizontal_menu li:hover a {
+border:1px solid #666;
+}
+
+.white-text .horizontal_menu li.active a, .white-text .horizontal_menu li:hover a {
+border:1px solid #666;
+}

@@ -1,0 +1,25 @@
+/**		TITLE 		**/
+
+h2, h2 a {
+color: #ce534c;
+}
+
+.moduletable.color h3 {
+color:#ce534c;
+}
+
+.moduletable.color:hover h3 {		/** to highlight the title on Hover 		**/
+color : #ed605b;
+}
+
+/** 	link		**/
+
+a, .readmore a, input[type="submit"], button, .breadcrumb a:hover, .social-links li.text_social_icons,
+.top_menu li.active a, .top_menu li:hover a, .bottom_menu li.active a, .bottom_menu li:hover a,
+.horizontal_menu li.active a, .horizontal_menu li:hover a {
+color: #ce534c;
+}
+
+a:hover, .readmore a:hover, input[type="submit"]:hover, button:hover {
+color: #ed605b;
+}

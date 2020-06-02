@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - Expires Headers</name>
+	<author>Michael Richey</author>
+	<creationDate>May 2010</creationDate>
+	<copyright>Copyright (C) 2010 Michael Richey. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>expiresheaders@richeyweb.com</authorEmail>
+	<authorUrl>www.richeyweb.com</authorUrl>
+	<version>1.3</version>
+	<description>PLG_EXPIRESHEADERS_XML_DESCRIPTION</description>
+	<files>
+		<folder>fields</folder>
+		<filename plugin="expiresheaders">expiresheaders.php</filename>
+	</files>
+	<media folder="media" destination="plg_expiresheaders">
+	  <filename>expiresheaders.js</filename>
+	</media>
+        <languages>
+                <language tag="en-GB">en-GB.plg_system_expiresheaders.ini</language>
+                <language tag="en-GB">en-GB.plg_system_expiresheaders.sys.ini</language>
+        </languages>
+	<config>
+		<fields name="params" addfieldpath="plugins/system/expiresheaders/fields">
+			<fieldset name="basic">
+				<field name="defaultexpiresspacer" type="spacer" 
+					label="PLG_EXPIRESHEADERS_EXPIRES_HEADER"
+					description="PLG_EXPIRESHEADERS_EXPIRES_HEADER_DESC"
+				/>
+				<field name="defaultexpires"
+					type="list"
+					description="PLG_EXPIRESHEADERS_DEFAULT_EXPIRES_DESC"
+					label="PLG_EXPIRESHEADERS_DEFAULT"
+					default="1"
+				>
+					<option value="0">PLG_EXPIRESHEADERS_OFF</option>
+					<option value="1">PLG_EXPIRESHEADERS_ON</option>
+				</field>
+				<field name="defaultexpireslength"
+					type="integer"
+					description="PLG_EXPIRESHEADERS_DEFAULT_LENGTH_DESC"
+					label="PLG_EXPIRESHEADERS_DEFAULT_LENGTH"
+					first="1"
+					last="59"
+					step="1"
+					default="2"
+				/>
+				<field name="defaultexpiresinterval"
+					type="list"
+					description="PLG_EXPIRESHEADERS_DEFAULT_INTERVAL_DESC"
+					label="PLG_EXPIRESHEADERS_DEFAULT_INTERVAL"
+					default="hour"
+				>
+					<option value="minute">PLG_EXPIRESHEADERS_MINUTES</option>
+					<option value="hour">PLG_EXPIRESHEADERS_HOURS</option>
+					<option value="day">PLG_EXPIRESHEADERS_DAYS</option>
+					<option value="week">PLG_EXPIRESHEADERS_WEEKS</option>
+					<option value="month">PLG_EXPIRESHEADERS_MONTHS</option>
+					<option value="year">PLG_EXPIRESHEADERS_YEARS</option>
+				</field>
+				<field name="defaultcachecontrolspacer" type="spacer" 
+					label="PLG_EXPIRESHEADERS_CACHE_CONTROL_HEADER" 
+					description="PLG_EXPIRESHEADERS_CACHE_CONTROL_HEADER_DESC" 
+				/>
+				<field name="defaultcachecontrol"
+					type="list"
+					description="PLG_EXPIRESHEADERS_DEFAULT_CACHE_CONTROL_DESC"
+					label="PLG_EXPIRESHEADERS_DEFAULT"
+					default="1"
+				>
+					<option value="0">PLG_EXPIRESHEADERS_OFF</option>
+					<option value="1">PLG_EXPIRESHEADERS_ON</option>
+				</field>
+				<field name="defaultpublicprivate" type="list" 
+					label="PLG_EXPIRESHEADERS_CACHE_CONTROL_PUBLICPRIVATE" 
+					description="PLG_EXPIRESHEADERS_CACHE_CONTROL_PUBLICPRIVATE_DESC" 
+					default="0"
+				>
+					<option value="0">public</option>
+					<option value="1">private</option>
+					<option value="2">no-cache</option>
+				</field>
+				<field name="defaultnostore" type="checkbox" 
+					label="PLG_EXPIRESHEADERS_CACHE_CONTROL_NOSTORE" 
+					description="PLG_EXPIRESHEADERS_CACHE_CONTROL_NOSTORE_DESC" 
+					value="1" 
+					default="" 
+				/>
+				<field name="defaultmustrevalidate" type="checkbox" 
+				label="PLG_EXPIRESHEADERS_CACHE_CONTROL_MUSTREVALIDATE" 
+				description="PLG_EXPIRESHEADERS_CACHE_CONTROL_MUSTREVALIDATE_DESC"
+				value="1" 
+				default="" 
+				/>
+				<field name="defaultpragmaspacer" type="spacer" 
+					label="PLG_EXPIRESHEADERS_PRAGMA_HEADER" 
+					description="PLG_EXPIRESHEADERS_PRAGMA_HEADER_DESC" 
+				/>
+				<field name="defaultpragma" type="checkbox" label="Pragma: no-cache" description="PLG_EXPIRESHEADERS_PRAGMA_HEADER_DESC" value="1" default="" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="ruleexpiresheader" type="spacer" 
+					label="PLG_EXPIRESHEADERS_EXPIRES_HEADER" 
+					description="PLG_EXPIRESHEADERS_EXPIRES_HEADER_DESC" 
+				/>
+				<field name="ruleexpires"
+					type="list"
+					label="PLG_EXPIRESHEADERS_DEFAULT"
+					description="PLG_EXPIRESHEADERS_DEFAULT_EXPIRES_DESC"
+					default="1"
+				>
+					<option value="0">PLG_EXPIRESHEADERS_OFF</option>
+					<option value="1">PLG_EXPIRESHEADERS_ON</option>
+				</field>
+				<field name="ruleexpireslength"
+					type="integer"
+					description="PLG_EXPIRESHEADERS_DEFAULT_LENGTH_DESC"
+					label="PLG_EXPIRESHEADERS_DEFAULT_LENGTH"
+					first="1"
+					last="59"
+					step="1"
+					default="2"
+				/>
+				<field name="ruleexpiresinterval"
+					type="list"
+					description="PLG_EXPIRESHEADERS_DEFAULT_INTERVAL_DESC"
+					label="PLG_EXPIRESHEADERS_DEFAULT_INTERVAL"
+					default="hour"
+				>
+					<option value="minute">PLG_EXPIRESHEADERS_MINUTES</option>
+					<option value="hour">PLG_EXPIRESHEADERS_HOURS</option>
+					<option value="day">PLG_EXPIRESHEADERS_DAYS</option>
+					<option value="week">PLG_EXPIRESHEADERS_WEEKS</option>
+					<option value="month">PLG_EXPIRESHEADERS_MONTHS</option>
+					<option value="year">PLG_EXPIRESHEADERS_YEARS</option>
+				</field>
+				<field name="rulecachecontrolspacer" type="spacer" 
+					label="PLG_EXPIRESHEADERS_CACHE_CONTROL_HEADER" 
+					description="PLG_EXPIRESHEADERS_CACHE_CONTROL_HEADER_DESC" 
+				/>
+				<field name="rulecachecontrol"
+					type="list"
+					description="PLG_EXPIRESHEADERS_DEFAULT_CACHE_CONTROL_DESC"
+					label="PLG_EXPIRESHEADERS_DEFAULT"
+					default="1"
+				>
+					<option value="0">PLG_EXPIRESHEADERS_OFF</option>
+					<option value="1">PLG_EXPIRESHEADERS_ON</option>
+				</field>
+				<field name="rulepublicprivate" type="list" 
+					label="PLG_EXPIRESHEADERS_CACHE_CONTROL_PUBLICPRIVATE" 
+					description="PLG_EXPIRESHEADERS_CACHE_CONTROL_PUBLICPRIVATE_DESC" 
+					default="0"
+				>
+					<option value="0">public</option>
+					<option value="1">private</option>
+					<option value="2">no-cache</option>
+				</field>
+				<field name="rulenostore" type="checkbox" 
+					label="PLG_EXPIRESHEADERS_CACHE_CONTROL_NOSTORE" 
+					description="PLG_EXPIRESHEADERS_CACHE_CONTROL_NOSTORE_DESC" 
+					value="1" 
+					default="" 
+				/>
+				<field name="rulemustrevalidate" type="checkbox" 
+					label="PLG_EXPIRESHEADERS_CACHE_CONTROL_MUSTREVALIDATE" 
+					description="PLG_EXPIRESHEADERS_CACHE_CONTROL_MUSTREVALIDATE_DESC" 
+					value="1" 
+					default="" 
+				/>
+				<field name="rulepragmaspacer" type="spacer" 
+					label="PLG_EXPIRESHEADERS_PRAGMA_HEADER" 
+					description="PLG_EXPIRESHEADERS_PRAGMA_HEADER_DESC" 
+				/>
+				<field name="rulepragma" type="checkbox" label="Pragma: no-cache" description="PLG_EXPIRESHEADERS_PRAGMA_HEADER_DESC" value="1" default="" />
+				<field name="menulist" type="menuitem"
+					description="PLG_EXPIRESHEADERS_FIELD_MENULIST_DESC"
+					label="PLG_EXPIRESHEADERS_FIELD_MENULIST_LABEL"
+					multiple="true"
+					size="10"
+				/>
+				<field name="addbutton"
+					type="button"
+					label=""
+					value="PLG_EXPIRESHEADERS_ADVANCED_ADD"
+					onclick="addit();return false;"
+				/>
+				<field name="headerrules"
+					type="list"
+					label="PLG_EXPIRESHEADERS_RULES_LABEL"
+					description="PLG_EXPIRESHEADERS_RULES_DESC"
+					size="10"
+				/>
+				<field name="removebutton"
+					type="button"
+					label=""
+					value="PLG_EXPIRESHEADERS_ADVANCED_REMOVE"
+					onclick="removeit();return false;"
+				/>
+				<field name="headerrulestext" type="hidden" label="" />
+				<field name="javascripts" type="javascript" label="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<extension type="package" version="3.0.0" method="upgrade">
+
+	<name>PKG_ZHYANDEXMAP</name>
+	<packagename>zhyandexmap</packagename>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>Mar 2016</creationDate>
+	<author>Zhuk Dmitry</author>
+	<authorEmail>ZhukDL@gmail.com</authorEmail>
+	<authorUrl>http://zhuk.cc</authorUrl>
+	<copyright>Copyright</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPLv2 or later</license>
+	<!--  The version string is recorded in the components table -->
+	<version>6.1.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>PKG_ZHYANDEXMAP_DESCRIPTION</description>
+
+ 
+	 <files folder="packages">
+	   <filename type="component" id="com_zhyandexmap" >com_zhyandexmap.zip</filename>
+	   <filename type="module" id="mod_zhyandexmap" client="site">mod_zhyandexmap.zip</filename>
+	   <filename type="plugin" id="plg_zhyandexmap" group="content">plg_zhyandexmap.zip</filename>
+	   <filename type="template" id="zh_template_map_fullscreen" client="site">zh_template_map_fullscreen.zip</filename>
+	 </files>	
+
+	<languages>
+			<language tag="en-GB">language/en-GB/en-GB.pkg_zhyandexmap.sys.ini</language>
+	</languages>	
+
+	
+        <!-- UPDATESERVER DEFINITION -->
+        <updateservers>
+                <!-- Note: No spaces or linebreaks allowed between the server tags -->
+                <server type="extension" priority="2" name="Zh YandexMap Package Update Site">http://zhuk.cc/update/pkg_zhyandexmap/extension.xml</server>
+		</updateservers>
+
+</extension>
+

@@ -1,0 +1,57 @@
+
+#column-menu, #supersized, #close-button, #open-button {
+display : none;
+}
+
+.breadcrumb, .left_column, .right-module-position, .users_top, .users_bottom {
+display : none;
+}
+
+#website-middle {
+background-color : white;
+}
+
+/**		 	style for print 		**/
+
+
+html, body {
+background: white;
+background-image : none;
+font-size: 12pt;
+}
+
+#column-content {
+width: auto;
+margin: 0 5%;
+padding: 0;
+border: 0;
+float: none !important;
+color: black;
+background: transparent none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+}
+
+h1, h3, h4, h5 {
+color : black;
+}
+
+.main_component {
+border:none;
+background: transparent none;
+margin-left: 10%;
+padding-top: 1em;
+}
+
+a:link, a:visited {
+color: #520;
+background-color: transparent;
+font-weight: bold;
+text-decoration: underline;
+}
+
+.site a[href]:after {
+content: " (" attr(href) ") ";
+font-size:85%;
+}

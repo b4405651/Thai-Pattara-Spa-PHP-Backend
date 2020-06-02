@@ -1,0 +1,325 @@
+/**
+*
+*		Menu mobile : to solved a bug with drop down menu and mobile browser
+*
+**/
+
+	
+.drop-down {
+position: relative;
+float: none;
+margin:0;
+padding:0;
+width: auto;
+height:auto;
+z-index: 10;
+}
+
+.drop-down ul {
+background-color: transparent;
+border : none;
+display : none;
+max-width: 400px;
+position: absolute;
+top: 0;
+padding-bottom:200px;
+width: 400px;
+z-index: 1337;
+}
+
+.drop-down:target > ul {
+ display : block;
+}
+
+.drop-down span.title_menu {
+display: block;
+float:none;
+position: relative;
+margin: 0 40px 8px 0px;
+line-height: 1;
+font-weight: normal;
+}
+
+.drop-down span.title_menu a {	
+display: inline-block;
+font-size: 20px;
+padding: 14px 20px 14px 38px;
+color: #fff;
+background: #333;
+border-radius: 8px;
+-moz-box-shadow: 1px 1px 3px #aaa inset;
+-webkit-box-shadow: 1px 1px 3px #aaa inset;
+box-shadow : 1px 1px 3px #aaa inset;
+}
+
+.drop-down span.title_menu a:before {
+ content: "";
+position: absolute;
+top: 18px;
+left: 10px;
+width: 16px;
+height: 0.135em;
+border-top: 0.375em double #ddd;
+border-bottom: 0.125em solid #ddd;
+}
+
+.drop-down span.title_menu a:hover, .drop-down span.title_menu a:focus {
+background: #000;
+text-decoration: none;
+}
+
+.drop-down:target span.title_menu {
+display: none;
+}
+
+.drop-down:target:before {
+content: "";
+position: fixed;
+z-index: -1;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(80,80,80,.8);
+}
+
+
+
+.drop-down li {
+position: relative;
+display : block ;
+float: none;
+line-height: inherit;
+padding: 0 ;
+margin:0 0 4px 0;
+}
+
+.drop-down li, .drop-down li:first-child {
+border : none;
+}
+
+.drop-down li.parent a:after, .drop-down li.parent span:after {
+color: #fff;
+font-size: 100%;
+right: 12px;
+top: 15px;
+-moz-transform:rotate(90deg);
+-webkit-transform:rotate(90deg);
+-o-transform:rotate(90deg);
+-ms-transform:rotate(90deg);
+transform:rotate(90deg);
+}
+
+.drop-down li.parent li.parent a::after , .drop-down li.parent li.parent span::after,
+.drop-down li.parent li.parent li.parent a::after , .drop-down li.parent li.parent li.parent span::after {
+color: #000;
+font-size: 100%;
+right: 12px;
+top: 15px;
+-moz-transform:rotate(90deg);
+-webkit-transform:rotate(90deg);
+-o-transform:rotate(90deg);
+-ms-transform:rotate(90deg);
+transform:rotate(90deg);
+}
+
+.drop-down li ul {
+display : block ;
+position: relative;
+top: 0;
+left: 0;
+z-index: 1;
+opacity:1;
+width: auto;
+/**	change	**/
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-o-border-radius: 0;
+border-radius:0;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+padding: 0;
+margin:0;
+background-color: transparent;
+}
+
+.drop-down li ul ul {
+top: 0;
+left: 0;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-o-border-radius: 0;
+border-radius:0;
+}
+
+.drop-down li ul:hover {
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+.drop-down li li ul:hover {
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+.drop-down li li {
+float:none;
+width:auto;
+background-image : none;
+padding:0;
+margin:0;
+}
+
+.drop-down li a, .drop-down li span.separator {
+display : block;
+width:auto;
+padding: 14px 15px 14px 25px;
+text-transform: none;
+font-weight: normal;
+font-size:150%;
+background-image:none;
+background-color : #000;
+color : #fff;
+-moz-border-radius: 8px 8px 0 0;
+-webkit-border-radius: 8px 8px 0 0;
+-o-border-radius: 8px 8px 0 0;
+border-radius: 8px 8px 0 0;
+border : none;
+-webkit-transition : none;
+-moz-transition : none;
+-ms-transition : none;
+-o-transition : none;
+transition : none;
+}
+
+.drop-down > ul > li > a:only-child {
+border-radius: 8px;
+}
+
+.drop-down li li a, .drop-down li li span.separator {
+display : block;
+width:auto;
+color : #222;
+letter-spacing: 0px;
+font-size:140%;
+line-height:inherit;
+padding: 14px 15px 14px 25px;
+margin:0 ;
+background-image:none;
+background-color : #fff;
+border: 1px solid #aaa;
+border-top: 0;
+-moz-border-radius:  0;
+-webkit-border-radius:  0;
+-o-border-radius:  0;
+border-radius:  0;
+}
+
+.drop-down li ul, .drop-down ul ul li:last-child > a {
+border-radius: 0 0 8px 8px;
+}
+
+.drop-down li li li a, .drop-down li li li span.separator {
+font-size:125%;
+padding: 14px 15px 14px 40px;
+background-color : #e8e8e8;
+}
+
+.drop-down ul ul ul li:last-child > a {
+border-radius: 0 ;
+}
+
+.drop-down li li li li a, .drop-down li li li li span.separator {
+font-size:120%;
+padding: 14px 15px 14px 60px;
+background-color : #d8d8d8;
+}	
+
+.drop-down li a:hover, .drop-down li span.separator:hover {
+-webkit-transition : none;
+-moz-transition : none;
+-ms-transition : none;
+-o-transition : none;
+transition : none;
+}
+
+.drop-down li li li:first-child > a, .drop-down li li li:first-child > span {
+border-top-right-radius: 0;
+border-top-left-radius: 0;
+}
+
+.drop-down li li:last-child > a, .drop-down li li:first-child > span {
+border-bottom-left-radius:  0;
+border-bottom-right-radius:  0;
+}
+
+.drop-down li:hover > ul, .drop-down li:focus > ul {
+display : block ;
+z-index:10;
+opacity:1;
+-webkit-transition : none;
+-moz-transition : none;
+-ms-transition : none;
+-o-transition :none;
+transition : none;
+}
+
+
+.drop-down a {
+text-decoration : underline !important;
+}
+
+.drop-down li:hover > a, .drop-down a[href="#navigation"] {
+text-decoration : none !important;
+}
+
+.drop-down a[href="#"] {
+text-decoration : none !important;
+cursor : default;
+}
+
+.drop-down li.active > a, .drop-down li.active > span, .drop-down li:hover > a, .drop-down li:hover > span {
+color: #fff ;
+background-color : #000;
+background-image: none;
+border: none;
+-moz-box-shadow: none;
+-webkit-box-shadow:none;
+box-shadow: none;
+}	
+
+.drop-down li li:hover > a, .drop-down li li:hover > span, .drop-down li li.active > a, .drop-down li li.active > span {
+color: #000 ;
+background-color : #fff;
+background-image: none;
+-moz-box-shadow: none ;
+-webkit-box-shadow: none ;
+box-shadow: none ;
+border: 1px solid #aaa;
+border-top: 0;
+}
+
+
+.drop-down li li li:hover > a, .drop-down li li li:hover > span, .drop-down li li li.active > a, .drop-down li li li.active > span {
+background-color : #e8e8e8;
+}
+
+.drop-down li li li li:hover > a, .drop-down li li li li:hover > span, .drop-down li li li li.active > a, .drop-down li li li li.active > span {
+background-color : #d8d8d8;
+}
+
+.drop-down li.current > a {
+color: #fff !important;
+text-decoration : none !important;
+background-color : #6699cc !important;
+}
+
+/* Disable position fixed for header */
+
+
+#column-menu {
+position:absolute;
+}

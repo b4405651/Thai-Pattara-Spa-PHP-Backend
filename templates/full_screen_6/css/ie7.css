@@ -1,0 +1,50 @@
+/*****************************************
+		SITE  IE7-
+******************************************/
+
+.breadcrumbs a:first-child {
+display:inline;
+text-indent: 0px;
+background-image : none;
+width:auto;
+height:auto;
+margin: 0;
+}
+
+.breadcrumbs a:first-child:hover {
+background-image : none;
+}
+
+
+ul.actions li, .link ul li a, #form-login ul li a, #com-form-login ul li a, ul.mostread li a, ul.latestnews li a, .weblinks ul li a, ul.newsfeed li a,
+#___plusone_0, .pollstableborder tr .sectiontableentry1, .pollstableborder tr .sectiontableentry2, div.mod-languages ul.lang-inline li,
+.categories-list dd, .categories-list dt, ul.pagenav li, .social-links li, .dl-horizontal dt .jicons-icons,
+span.content_vote input, span.content_rating img , .pagination li, .top_menu li, .bottom_menu li, .horizontal_menu li, .horizontal_menu li a, i.icon-search, .btn, .btn-toolbar .btn-group, fieldset.phrases label, fieldset.only label {
+display:inline;
+zoom:1;
+}
+
+/*************	COLUMN LAYOUTS				****************************/
+
+.one-half, .one-third, .two-third, .one-fourth, .two-fourth, .three-fourth, .one-fifth, .two-fifth, .three-fifth, .four-fifth {
+margin-right:3.5%;
+}
+
+
+/**		contact form	**/
+
+.form-horizontal .control-group {
+clear: both;
+}
+
+.nav-tabs, .nav-pills, .tab-content, .tab-pane {
+clear: both;
+}
+
+.dl-horizontal dt {
+clear: none;
+float: left;
+font-weight: bold;
+width: 100px;
+padding-right: 30px;
+}
